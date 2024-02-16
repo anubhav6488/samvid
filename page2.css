@@ -32,13 +32,15 @@ body{
     font-family: "Oswald",sans-serif;
     position: absolute;
     left: 43.5%;
-    top: 68%;
+    top: 74%;
     height: 28px;
-    background-color: green;
+    background-color: #1560BD;
     color: white;
     border-width: thin;
     width: 150px;
-    font-size: 1rem;border:none;transition: all .1s ease-in-out;
+    font-size: 1rem;
+    border:none;
+    transition: all .1s ease-in-out;
 }
 
 p{
@@ -61,12 +63,34 @@ h1{
     opacity:2;
 }
 #data{
-    background-color: white;
+    background-color: #925366;
     width: 35%;
     height: 50%;
     position: absolute;
     left: 32.5%;
-    top: 25%;
+    top: 31%;
     border-radius: 2vh;
+    opacity:.95;
 }
+
+@media screen and (max-width:480px){
+    body{
+        overflow:hidden;
+    }
+    #data{
+        width: 90%;
+        left: 5%;
+        height: 35%;
+    }
+    .bg-img img{
+        overflow:hidden;
+        height: auto;
+        width: auto;
+    }
+    #downloadBtn{
+        left: 32%;
+        top: 60%;
+    }
+}
+
 

@@ -637,5 +637,20 @@ body::-webkit-scrollbar {
         margin: 20vh 4vh 18vh 4vh;;
     }
 
+
+    .Falling-leaves-1{
+        height: 15vh;
+        width: 75vw;
+        left: 15%;
+        top: 68%;
+    }
+    
+    .Falling-leaves-2{
+        height: 15vh;
+        width: 75vw;
+        left: 20%;
+        top: 68%;
+    }
+
 }
 

@@ -19,13 +19,13 @@ nav {
 } */
 
 #main {
-  height: 155vh;
+  height: 175vh;
   width: 100%;
   background-image: url(Assests/bg-image.jpg);
   background-size: cover;
   background-blend-mode: hard-light;
   background-position: center;
-  padding-inline: 4%;
+  /* padding-inline: 4%; */
 }
 
 #main .main-heading {

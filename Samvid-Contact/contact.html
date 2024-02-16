@@ -9,9 +9,47 @@
     <script src="../footer-Assets/scriptForDesktop.js"></script>
 
     <link rel = "stylesheet" href = "contact.css">
-    <link rel = "stylesheet" href ="../footer-Assets/footerstyle.css">
+    <!-- <link rel = "stylesheet" href ="../footer-Assets/footerstyle.css"> -->
+    <link rel="stylesheet" href="../footer-Assets/style-for-footer.css">
 
-    
+     <!-- icons -->
+     <script src="https://kit.fontawesome.com/e4298329f1.js" crossorigin="anonymous"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+     <script>
+         function isMobile(){
+             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+         }
+ 
+         // load .js file accordingly to the device type (mobile/desktop)
+         function loadScript(src) {
+             var script = document.createElement('script');
+             script.src = src;
+             document.head.appendChild(script);
+         }
+ 
+         var mob_view = document.querySelector('.events-page-for-mobile');
+         var desk_view = document.querySelector('.events-page');
+ 
+ 
+         if(isMobile()){
+             loadScript('../footer-Assets/scriptForMobile.js');
+             desk_view.classList.add('disabled');
+             mob_view.classList.remove('disabled');
+         } else {
+             loadScript('../footer-Assets/scriptForDesktop.js');
+             mob_view.classList.add('disabled');
+             desk_view.classList.remove('disabled');
+         }
+         
+     </script>
+
+
 </head>
 <body>
     
@@ -21,10 +59,10 @@
         <div class = "navbar">
             <a href = "https://www.sstc.ac.in/#" target = "_blank"class = "nav-img"><img src = "../images/logo-02.png"></a>
             <a href = "../Samvid Event Page/event.html">EVENTS</a>
-            <a href = "">SCHEDULE</a>
+            <a href = "../hackathon/index.html">HACKATHON</a>
             <a href = "../index.html">HOME</a>
             <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
-            <a href = "">SPONSOR</a>
+            <a href = "">SPONSORS</a>
             <a href = "/Samvid-Contact/contact.html">CONTACT US</a>
             <a href = "">ABOUT US</a>
            
@@ -37,15 +75,15 @@
             </div>    
         </div>
         <div class="mob_nav">
-            <a href = "https://www.sstc.ac.in/#" target = "_blank"class = "nav-img"><img src = "../images/logo-02.png"></a>
+            <!-- <a href = "https://www.sstc.ac.in/#" target = "_blank"class = "nav-img"><img src = "../images/logo-02.png"></a> -->
             <a href = "../Samvid Event Page/event.html">EVENTS</a>
-            <a href = "">SCHEDULE</a>
+            <a href = "./hackathon/index.html">HACKATHON</a>
             <a href = "../index.html">HOME</a>
             <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
-            <a href = "">SPONSOR</a>
+            <a href = "">SPONSORS</a>
             <a href = "/Samvid-Contact/contact.html">CONTACT US</a>
             <a href = "">ABOUT US</a>
-            <div class="navbar_icons">
+            <!-- <div class="navbar_icons">
                 <a href="https://www.youtube.com/@iitbmoodindigo" target="_blank" rel="noopener noreferrer">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
                         <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
@@ -71,7 +109,7 @@
                         </path>
                     </svg>
                 </a>
-            </div>
+            </div> -->
         </div>
 
         <!-- Contact Section -->
@@ -158,8 +196,8 @@
                         <h1>From Roots to Reach</h1>
                         <p class="registration-query-para">Haven't registered yet?</p>
                         <div class="register-n-events">
-                            <p class="events-button">Events</p>
-                            <p class="ticket-button">Buy Tickets</p>
+                            <p class="events-button" onclick="location.href='./Samvid Event Page/event.html'">Events</p>
+                            <p class="register" onclick="location.href='reg.html'">Register</p>
                         </div>
                     </div>
                     <img src="../footer-Assets/images/longScreenshot/img1.jpg" class="img1" alt="img1">
@@ -201,8 +239,8 @@
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href=""><i class="fa-brands fa-youtube"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                    <!-- <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-snapchat"></i></a> -->
                     <div class="horizontal-line-2"></div>
                 </div>
 
@@ -218,29 +256,6 @@
     <script src = "contact.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
-    <!-- Script for footer animation -->
-    <script>
-        console.log("Zinda hu");
-        function isMobile(){
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        // load .js file accordingly to the device type (mobile/desktop)
-        function loadScript(src) {
-            var script = document.createElement('script');
-            script.src = src;
-            document.head.appendChild(script);
-        }
-
-        if(isMobile()){
-            console.log("Ji");
-            loadScript('../footer-Assets/scriptForMobile.js');
-        } else {
-            console.log("Ji");
-            loadScript('../footer-Assets/scriptForDesktop.js');
-        }
-        
-    </script>
 </body>
 
 </html>
