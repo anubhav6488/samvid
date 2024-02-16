@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.page{
+    background-image: linear-gradient(to bottom, #04021a, #1b0d26, #330e2e, #4c0b2d, #620b26);
+    /* height: 300vh; */
+    z-index: -1;
+    position: relative;
+    z-index:1000;
+    overflow-x: hidden;
+}
+
+.navbar{
+    align-items: center;
+    color: #fff;
+    display: flex;
+    height: 15vh;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100vw;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.hamburger{
+    display:none;
+}
+.navbar a{
+    padding: 0 2px;
+    color: white;
+    font-size: 2.5vh;
+    text-decoration: none;
+    font-family: "lucida Sans Unicode", "Lucida Grande", sans-serif;
+    transition: transform 0.25s;
+    background-color: rgba(103, 101, 104, 0.3);
+    border-radius: 1.5vh;
+    padding: 1.5vh 2.5vh;
+    z-index:-1;
+}
+
+.navbar .nav-img{
+    height:15vh;
+    background-color: transparent;
+    border:none;
+}
+.navbar a img{
+    position:relative;
+    height:350%;
+    background: transparent;
+    z-index:2;
+    overflow: clip;
+    width: 20vw;
+    margin-top:-15vh;
+    clip-path: inset(90px 0 90px 0);
+}
+
+.navbar a:hover {
+    color: pink;
+    transform: scale(1.1); /*scale used to avoid enlarging of world tree image while hovering over navigation bar*/
+    cursor: pointer;
+}
+
+#Reg-Btn {
+    background-color: rgb(205, 49, 75);
+    padding: 1.5vh 2.5vh;
+    border-radius: 1.5vh;
+}
+
+.Contact-heading{
+    color:gold;
+    text-align:center;
+    font-size: 4.5vw;
+    font-family: Abril Fatface,serif;
+}
+
+.Contact-team{
+    margin-top:5vh;
+}
+.Contact-team .Contact-team-title{
+    color:turquoise;
+    font-family: Abril Fatface,serif;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.Contact-team .Contact-team-main-container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 5vw;
+}
+
+.Contact-team-head-container{
+    position:relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    width: 100vw;
+    flex-direction:row;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.Contact-team-member-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    width: 100vw;
+    flex-wrap:wrap;
+    grid-gap: 50px;
+}
+
+.Contact-card{
+    /* box-shadow: -12px 16px 0 #04021a; */
+    height: 30vw;
+    width: 22vw;
+    align-items: center;
+}
+
+.Contact-card img{
+    background-color: #330e2e;
+    height:70%;
+    width:100%;
+}
+
+.Contact-card .details{
+    background-color: #4c0b2d;
+    display:flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    color:gold;
+    font-family:Quicksand,sans-serif;
+    width:90%;
+    position:relative;
+    margin-left:5%;
+    margin-top:-20%;
+    height:45%;
+}
+
+.Contact-card .details .Contact-icons{
+    display:flex;
+    flex-direction:row;
+}
+
+.Member-name{
+    text-transform: uppercase;
+    font-size:1.6vw;
+    margin-top: 15%;
+}
+
+.Member-role{
+    font-size:1.4vw;
+    color:white;
+    text-transform: lowercase;
+}
+.details p{
+    text-align:center;
+}
+
+.Contact-icons img{
+   
+    height:4vh;
+    width:4vh;
+}
+
+.Contact-icons{
+    display: flex;
+    justify-content: center;
+    margin-top:15%;
+}
+
+.details .Member-role{
+    margin-top:5%;
+}
+
+.Contact-team-member-container .Contact-icons{
+    display: flex;
+    justify-content: center;
+    margin-top:5%;
+}
+
+.arrow-left,.arrow-right{
+    display:none;
+}
+
+@media screen and (max-width:480px) {
+    .navbar{
+        align-items: flex-end;
+        height: 10vh;
+        justify-content: flex-start;
+    }
+    .navbar a img{
+        position:relative;
+        background: transparent;
+        z-index:2;
+        overflow: clip;
+        width: 70vw;
+        margin-top:-11.5vh;
+        margin-left:-7vw;
+        clip-path: inset(90px 0 90px 0);
+    }
+    .navbar :not(:first-child) {
+        display:none;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        margin-left: 80%;
+        top: 3vh;
+        z-index: 100;
+    }
+
+    .Contact-heading{
+        font-size:8vw;
+    }
+
+    .Contact-team .Contact-team-title{
+        font-size:5vw;
+        margin-bottom: 5vw
+    }
+
+    .Contact-team .Contact-team-head-container{
+        flex-direction: column;
+        justify-content: space-between;
+        gap:15vw;
+    }
+
+    .Contact-team .Contact-team-member-container{
+        height:39vh;
+        overflow: hidden;
+        width:1000vw;
+        position: relative;
+        display:block;
+        transition: transform 2s linear;
+        transform: translateX(0);
+        -webkit-animation-name: none;
+        animation-name: none;
+        -webkit-animation-duration: 30s;
+        animation-duration: 9s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+        animation-direction:normal;
+        -webkit-animation-play-state: running;
+        animation-play-state: running; 
+        animation-timing-function: linear;
+        
+    }
+    .Contact-team-member-container .Contact-card{
+        position: relative;
+        margin-top:1px;
+        left:22%;
+    }
+    :root{
+        --change-start:0vw;
+        --change-end: 0vw;
+    }
+
+    @keyframes slide_animation{
+        /* 0% {right:0vw;}
+        14.2% {right:0vw;}
+        29%{right:100vw;}
+        43.2% {right:100vw;}
+        57.4% {right:200vw;}
+        71.6% {right: 200vw;}
+        85.8% {right: 300vw;}
+        100% {right:300vw;} */
+        
+        from{
+            transform: translateX(var(--change-start));
+        }
+        to{
+            transform: translateX(var(--change-end));
+        }
+
+    }
+    @-webkit-keyframes slide_animation{
+        0% {right:0vw;}
+        14.2% {right:0vw;}
+        29%{right:100vw;}
+        43.2% {right:100vw;}
+        57.4% {right:200vw;}
+        71.6% {right: 200vw;}
+        85.8% {right: 300vw;}
+        100% {right:300vw;}
+    }
+
+    .Contact-card-container{
+        width:100vw;
+        height:100%;
+        float:left;
+    }
+
+    .Contact-card{
+        height: 300px;
+        margin-bottom: 2vh;
+        margin-top: -5vw;
+        width: 55vw;
+    }
+
+    .Member-name {
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-top: 15%;
+    }
+
+    .Member-role {
+        font-size: 3.5vw;
+        color: red;
+        text-transform: lowercase;
+    }
+
+    .Contact-icons {
+        margin-top: 10%;
+    }
+
+    .Contact-icons img {
+        height: 3vh;
+        width: 3vh;
+    }
+    .mob_nav {
+        align-items: center;
+        background-color: #000;
+        background-image: url(/static/media/texture.7fd0896….png);
+        box-shadow: 0 4px 30px 0 #b2b2b240;
+        flex-direction: column;
+        height: 100vh;
+        left: 0;
+        padding-top: 10vh;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: 2;
+    }
+    .mob_nav a {
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-family: Abril Fatface,serif;
+        font-size: 7vw;
+        height: 8vh;
+        margin-top: 1vh;
+        text-decoration: none;
+        width: 70vw;
+    }
+
+    .Contact-card-container .arrow-left{
+        display: block;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-right: 24px solid grey;
+        border-bottom: 12px solid transparent;
+        top: 43%;
+        left: 3vw;
+        opacity: .5;
+        z-index: 1000;
+    }
+
+    .Contact-card-container .arrow-right{
+        display: block;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-left: 24px solid grey;
+        border-bottom: 12px solid transparent;
+        top: 36.5%;
+        opacity: .5;
+        left: 91vw;
+        z-index:1000;
+    }
+
+    .arrow-left:hover , .arrow-right:hover{
+        opacity:1;
+    }
+}
+
+.mob_nav{
+    display:none;
+}
+.active{
+    display:flex;
+}
+

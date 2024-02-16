@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 12, 66);
+    user-select: none;
+}   
+
+
+.scroll-animation-outer-frame {
+    background-color: rgb(32, 12, 66);
+    height: 185vh;
+    width: 100%;
+    border-top-left-radius: 4vh;
+    border-top-right-radius: 4vh;
+    /* margin: 0; */
+    position: relative;
+}
+
+.scroll-animation-inner-frame {
+    background-color: rgb(86, 34, 172);
+    height: 105vh;
+    width: 92%;
+    border-radius: 4vh;
+    position: relative;
+    left: 0;
+    top: 6%;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.scroll-animation-inner-frame-transparent {
+    background-color: rgba(0, 0, 255, 0.1);
+    height: 105vh;
+    width: 100%;
+    border-radius: 4vh;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    z-index: 2;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 11vh;
+}
+
+.scroll-animation-inner-frame-transparent h1 {
+    margin: 2% 20% 0%;
+    color: white;
+}
+
+.footer-tag-lines {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registration-query-para {
+    margin: -4vh 40vh 2vh 40vh;
+    color: antiquewhite;
+    font-size: 4vh;
+}
+
+.register-n-events {
+    font-family: 'Mukta', sans-serif;
+    font-size: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-button {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4vh;
+    padding: 1.5vh 6vh;
+    font-size: 3vh;
+    font-family: sans-serif;
+    transition: 0.5s ease;
+    margin-right: 5vh;
+}
+
+.register { 
+    background-image: url("footer-images/arrow.svg");
+    background-repeat: no-repeat;
+    padding: 1.5vh 3vh 1.5vh 7vh;
+    background-position: 1vh;
+    color: white;
+    background-color: red;
+    font-size: 3vh;
+    font-family: sans-serif;
+    border-radius: 20vh;
+    cursor: pointer;
+    transition: 0.5s;
+    background-size: 5vh;
+    margin-left: 5vh;
+}
+
+.register:hover {
+    background-position: 95%;
+    padding-left: 2vh;
+    padding-right: 7vh;
+}
+
+
+.events-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1.5px solid black;
+}
+
+
+.img1, .img2, .img3, .img4, .img5 {
+    height: auto;
+    top: 0;
+    transform: rotate(-6.5deg);
+    width: 42vh;
+    position: absolute;
+    opacity: 50%;
+}
+
+.img1 {
+    left: -22vh;
+    top: -12vh;
+}
+
+.img2 {
+    left: 25vh;
+    top: -33vh;
+}
+
+.img3 {
+    left: 77vh;
+    top: -16vh;
+}
+
+.img4 {
+    left: 125vh;
+    top: -36vh;
+}
+
+.img5 {
+    left: 180vh;
+    top: -12vh;
+}
+
+
+.scroll-animation-outer-frame hr {
+    width: 93%;
+    border-color: rgb(13, 3, 32);  
+}
+
+.bottom {
+    height: 80vh;           /* Dont know why but the code is working fine here */
+    background-color: rgb(32, 12, 66);
+    position: relative;
+    top: -60vh;
+}
+
+.bottom hr {
+    width: 93%;
+    border-color: rgb(108, 43, 217); 
+    margin: 0 auto;
+}
+
+.bottom p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    position: relative;
+}
+
+.the-bottom-row {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 3.5vh;
+    color: rgb(154, 160, 166);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 5vh;
+}
+
+.vertical-line {
+    border-left: 2px solid rgb(108, 43, 217);
+    height: 50vh;
+}
+
+.event-location {
+    height: 40vh;
+    width: 50vh;
+    text-align: center;
+    transition: transform 0.5s;
+    opacity: 70%;
+}
+.event-location h2 {
+    margin-bottom: 2vh;
+}
+
+.event-location:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.event-location iframe {
+    border-radius: 3vh;
+    height: 100%;
+    width: 110%;;
+}
+
+.event-policies {
+    height: 40vh;
+    width: 50vh;
+    text-align: center;
+    transition: transform 0.5s;
+    opacity: 70%;
+    position: relative;
+}
+
+.event-policies:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.feedback-n-support {
+    height: 40vh;
+    width: 50vh;
+    text-align: center;
+    transition: transform 0.5s;
+    opacity: 70%;
+}
+
+.feedback-n-support:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.the-bottom-row p {
+    font-size: 2.5vh;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.horizontal-line-1 {
+    width: 100%;
+    border-top: 2px solid rgb(108, 43, 217);
+    margin: 0 2vh;
+}
+
+.horizontal-line-2 {
+    width: 100%;
+    border-top: 2px solid rgb(108, 43, 217);
+    margin: 0 2vh;
+}
+
+.the-logos-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25vh;
+    gap: 3vh;
+}
+
+.the-logos-row i {
+    color: white;
+    padding: 0.8vh;
+    font-size: 5vh;
+}
+
+.fa-x-twitter:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.fa-square-facebook:hover {
+    color: rgb(16, 16, 228);
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.fa-linkedin-in:hover {
+    color: rgb(0, 0, 255);
+}
+
+.fa-youtube:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 0, 255);
+    cursor: pointer;
+}
+
+.fa-snapchat:hover {
+    color: yellow;
+    cursor: pointer;
+
+}
+
+.the-samvid-logo {
+    background-image: url('footer-images/samvid-official-logo.svg');
+    height: 30vh;
+    width: 40vh;
+    background-size: cover; 
+    margin: 5vh auto;
+}
+
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+/* ======================= R E S P O N S I V E N E S S    B E G I N S    H E R E =================== */
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+
+@media only screen and (max-width: 600px) {
+    
+    .scroll-animation-outer-frame {
+        background-color: rgb(32, 12, 66);
+        height: 300vh;
+        width: 100%;
+        border-top-left-radius: 4vh;
+        border-top-right-radius: 4vh;
+        margin: 1vh auto;
+        margin-top: 2vh;
+        position: relative;
+        overflow: auto;
+        top: 70vh;
+    }
+
+    .scroll-animation-inner-frame {
+        background-color: rgb(86, 34, 172);
+        height: 80vh;
+        width: 92.5%;
+        border-radius: 4vh;
+        position: relative;
+        left: 0;
+        top: 1%;
+        right: 0;
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        z-index: 1;
+    
+    }
+
+    .scroll-animation-inner-frame-transparent h1 {
+        font-size: 8vh;
+        margin: 20vh 0 2vh 0;
+    }
+
+    .registration-query-para {
+        margin: -1vh 5vh 4vh 5vh;
+        color: antiquewhite;
+        font-size: 2.5vh;
+    }
+
+    .register-n-events {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-button {
+        margin: 2vh 0;
+        font-size: 2.5vh;
+        padding: 1.5vh 5vh;
+    }
+
+    .register {
+        background-repeat: no-repeat;
+        padding: 1.5vh 2vh 1.5vh 6vh;
+        background-position: 0.7vh;
+        color: white;
+        background-color: red;
+        font-size: 2.5vh;
+        font-family: 'calibri';
+        border-radius: 20vh;
+        cursor: pointer;
+        transition: 0.5s;
+        background-size: 4.5vh;
+        margin: 0 auto;
+    }
+
+    .img1, .img2, .img3{
+        height: auto;
+        top: 0;
+        transform: rotate(-6.5deg);
+        width: 20vh;
+        position: absolute;
+    }
+    
+    .img1 {
+        left: -7.74vh;
+        top: 0.2125vh;
+    }
+
+    .img2 {
+        left: 14.3476vh;
+        top: -16.43vh;
+    }
+
+    .img3 {
+        left: 39.4349vh;
+        top: -8vh;
+    }
+
+
+    /* ================= FOOTER DESIGN(S) =====================*/
+    .bottom {
+        margin-top: 8vh;
+        position: relative;
+        top: -130vh;
+    }
+
+    .bottom p {
+        margin: 0 2vh;
+    }
+
+    .bottom hr {
+        margin-top: -20vh;
+    }
+
+    /* --------------------------- */
+
+    .the-bottom-row {
+        flex-direction: column;
+        font-size: 2.5vh;
+        /* word-wrap: break-word; */
+    }
+
+    .the-bottom-row p {
+        font-size: 2.2vh;
+        margin: 0 1vh 0 1vh;
+    }
+
+    /* ------------------------- */
+    .event-location {
+        opacity: 100%;
+    }    
+
+    .event-location:hover {
+        transform: scale(1);
+    }
+
+    .event-location iframe{
+        width: 90%;
+    }
+    
+    /* ------------------------- */
+
+    .event-policies {
+        margin: 40% 2vh 0 2vh;
+        opacity: 100%;
+    }
+
+    .event-policies:hover {
+        transform: scale(1);
+    }
+
+    .event-policies p{
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2vh;
+        padding: 3vh 1vh;
+        margin: 0 1.5vh;
+    }
+
+    /* --------------------------- */
+    .feedback-n-support {
+        margin: -2% 2vh 0 2vh;
+        opacity: 100%;
+    }
+
+    .feedback-n-support:hover {
+        transform: scale(1);
+    }
+
+    .feedback-n-support p {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 2vh;
+        padding: 3vh 1vh;
+        margin: 0 1.5vh;
+    }
+
+    /* -------------------------- */
+
+    .the-logos-row {
+        gap: 2vh;
+        margin: 0 10vh;
+    }
+
+    .the-logos-row i {
+        font-size: 4vh;
+    }
+
+    /* -------------------------- */
+
+    /* -------------------------- */
+
+    .vertical-line {
+        display: none;
+    }
+
+    .horizontal-line-1, .horizontal-line-2 {
+        display: none;
+    }
+}
+
+
+

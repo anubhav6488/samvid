@@ -1,0 +1,140 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+}
+/* 
+nav {
+    height: 100px;
+} */
+
+#main {
+  height: 155vh;
+  width: 100%;
+  background-image: url(Assests/bg-image.jpg);
+  background-size: cover;
+  background-blend-mode: hard-light;
+  background-position: center;
+  padding-inline: 4%;
+}
+
+#main .main-heading {
+  padding: 10px 10px;
+  font-size: 30px;
+  background-color: #b58b62;
+  box-shadow: -10px 10px 10px #14527e;
+  border-radius: 10px;
+  position: relative;
+  top: 30px;
+  left: 50px;
+  text-transform: uppercase;
+  transform: skew(-15deg);
+  width: 400px;
+  text-align: center;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  top: 42%;
+}
+.circle2 {
+  right: 13px;
+  top: 42%;
+}
+.event-list {
+  margin-top: 150px;
+}
+
+.event-names {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:2rem;
+  row-gap: 100px;
+  flex-wrap: wrap;
+}
+
+.event-box {
+  height: 280px;
+  width: 250px;
+  /* background-color: rgba(191, 155, 123, 1); */
+  /* box-shadow: -10px 10px 10px #866bf1d4; */
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.event-box > img {
+  height: 280px;
+  width: 220px;
+  background-position: center;
+  background-size:auto;
+
+  border-radius: 30px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: -10px 10px 3px #370443ec;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.event-box h3 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* .event-box:hover  {
+    position: relative;
+    transition-delay: 1s;
+    left: 10px;
+    top: -10px;
+    cursor: pointer;
+} */
+
+.tapebox {
+  height: 18px;
+  background: rgba(201, 196, 180, 1.5);
+  border-radius: 2px;
+  width: 100px;
+  position: absolute;
+  top: -10px;
+  left: 30%;
+  transform: skew(-10deg);
+}
+.btn-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e155d3;
+  outline: none;
+  font-weight: 600;
+}

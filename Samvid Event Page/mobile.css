@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    
+    #main {
+        padding-inline: 2%;
+        height: auto;
+    }
+    #main .main-heading {
+        width: 370px;
+        left:7%;
+        top: 50px;
+        box-shadow: -10px 10px 10px #14527e;
+    }
+  }

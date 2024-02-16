@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    margin:0;
+    height:90vh;
+    overflow: hidden;
+}
+.bg-img-slider{
+    position:absolute;
+    display:flex;
+    top:0;
+    z-index: -1000;
+}
+.bg-img{
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+}
+.bg-img img{
+    height:100vh;
+    width:100vw;
+    opacity:1;
+}
+#downloadBtn:hover{
+    opacity:0.5;
+    cursor:pointer;
+}
+#downloadBtn{
+    font-family: "Oswald",sans-serif;
+    position: absolute;
+    left: 43.5%;
+    top: 68%;
+    height: 28px;
+    background-color: green;
+    color: white;
+    border-width: thin;
+    width: 150px;
+    font-size: 1rem;border:none;transition: all .1s ease-in-out;
+}
+
+p{
+    font-family: "Lora",serif;
+    font-weight: 400;
+    font-size:1.3rem;
+    margin-left:5%;
+    opacity:5;
+    COLOR:gold;
+}
+strong{
+    color:white;
+}
+h1{
+    font-family: "Oswald",sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: black;
+    margin-top:5%;
+    opacity:2;
+}
+#data{
+    background-color: white;
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    left: 32.5%;
+    top: 25%;
+    border-radius: 2vh;
+}
+
