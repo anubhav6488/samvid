@@ -2,12 +2,46 @@
     
     #main {
         padding-inline: 2%;
-        height: auto;
+        height: auto ;
     }
     #main .main-heading {
         width: 370px;
         left:7%;
         top: 50px;
         box-shadow: -10px 10px 10px #14527e;
+    }
+  }
+
+  @media only screen and (max-width: 428px) {
+    
+    #main {
+        padding-inline: 2%;
+        height: auto;
+    }
+    #main .main-heading {
+        width: 300px;
+        left:7%;
+        top: 50px;
+        box-shadow: -10px 10px 10px #14527e;
+    }
+    #main .main-heading h1 {
+        font-size: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 354px) {
+    
+    #main {
+        padding-inline: 2%;
+        height: auto;
+    }
+    #main .main-heading {
+        width: 250px;
+        left:7%;
+        top: 50px;
+        box-shadow: -10px 10px 10px #14527e;
+    }
+    #main .main-heading h1 {
+        font-size: 30px;
     }
   }
