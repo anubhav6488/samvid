@@ -80,7 +80,7 @@ h1{
     #data{
         width: 90%;
         left: 5%;
-        height: 35%;
+        height: 40%;
     }
     .bg-img img{
         overflow:hidden;
@@ -89,7 +89,7 @@ h1{
     }
     #downloadBtn{
         left: 32%;
-        top: 60%;
+        top: 65%;
     }
 }
 

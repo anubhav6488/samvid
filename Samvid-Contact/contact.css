@@ -287,7 +287,9 @@ body::-webkit-scrollbar {
             transform: translateX(var(--change-start));
         }
         to{
-            transform: translateX(var(--change-end));
+            /* transform: translateX(var(--change-end)); */
+            transform: translateX(-300vw);
+
         }
 
     }

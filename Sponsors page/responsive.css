@@ -1,0 +1,44 @@
+@media screen and (max-width:860px){
+    .sponsor_title{
+        font-size: 15vw;
+        left: 20vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .ts_card,
+  .ts_image img {
+    width: 35vw;
+  }
+  .title_sponsor_container,
+  .ts_card {
+    height: 15vh;
+  }
+  .sponsor_contact,
+  .sponsor_info {
+    font-family: Anek Latin, sans-serif;
+    position: absolute;
+    top: 20vh;
+    width: 70%;
+    left: 15vw;
+    font-size: 15px;
+  }
+  .sponsor_title {
+    font-size: 30px;
+  }
+  .sponsor_title {
+    font-size: 70px;
+    left: 20vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sponsor_title {
+    font-size: 30px;
+    left: 15vw;
+  }
+  .sponsor_info {
+    margin-bottom: 20px;
+  }
+}
+

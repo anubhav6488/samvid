@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <script src="../footer-Assets/scriptForMobile.js"></script>
+    <script src="../footer-Assets/scriptForDesktop.js"></script>
+
+    <link rel = "stylesheet" href = "../Samvid-Contact/contact.css">
+    <!-- <link rel = "stylesheet" href ="../footer-Assets/footerstyle.css"> -->
+    <link rel="stylesheet" href="../footer-Assets/style-for-footer.css">
+
+     <!-- icons -->
+     <script src="https://kit.fontawesome.com/e4298329f1.js" crossorigin="anonymous"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+     <script>
+         function isMobile(){
+             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+         }
+ 
+         // load .js file accordingly to the device type (mobile/desktop)
+         function loadScript(src) {
+             var script = document.createElement('script');
+             script.src = src;
+             document.head.appendChild(script);
+         }
+ 
+         var mob_view = document.querySelector('.events-page-for-mobile');
+         var desk_view = document.querySelector('.events-page');
+ 
+ 
+         if(isMobile()){
+             loadScript('../footer-Assets/scriptForMobile.js');
+             desk_view.classList.add('disabled');
+             mob_view.classList.remove('disabled');
+         } else {
+             loadScript('../footer-Assets/scriptForDesktop.js');
+             mob_view.classList.add('disabled');
+             desk_view.classList.remove('disabled');
+         }
+         
+     </script>
+
+</head>
+<body>
+    <div class = "navbar">
+        <a href = "https://www.sstc.ac.in/#"  target ="_blank"class = "nav-img"><img src = "../images/logo-02.png"></a>
+        <a href = "../Samvid Event Page/event.html">EVENTS</a>
+        <a href = "../hackathon/index.html" target="_blank">HACKATHON</a>
+        <a href = "../index.html">HOME</a>
+        <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
+        <a href = "./sponsor.html">SPONSORS</a>
+        <a href = "../Samvid-Contact/contact.html">CONTACT US</a>
+        <a href = "">ABOUT US</a> 
+    </div>
+    <div class="hamburger">
+        <div class="hamburger-react" aria-expanded="false" id = "hamburger-react" role="button" tabindex="0" style="cursor: pointer; height: 48px; position: relative; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; user-select: none; width: 48px; outline: none; transform: none;">
+            <div id ="bar1" class = "bar1" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+            <div id = "bar2" class = "bar2" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+            <div id = "bar3" class = "bar3" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+        </div>    
+    </div>
+    <div class="mob_nav">
+        <!-- <a href = "https://www.sstc.ac.in/#"  target ="_blank"class = "nav-img"><img src = "./images/logo-02.png"></a> -->
+        <a href = "../Samvid Event Page/event.html">EVENTS</a>
+        <a href = "../hackathon/index.html" target="_blank">HACKATHON</a>
+        <a href = "../index.html">HOME</a>
+        <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
+        <a href = "./sponsor.html">SPONSORS</a>
+        <a href = "../Samvid-Contact/contact.html">CONTACT US</a>
+        <a href = "">ABOUT US</a> 
+    </div>
+    <main>
+        <!--main container of all the sponsor divs-->
+        <div class="sponsor_page">
+            
+            <div class="sponsor_home">
+                <img src="https://www.moodi.org/static/media/sponsor_grad.083207c2d5c2de4d1eaa.png" alt="">
+                <div class="sponsor_title">Sponsors</div>
+                <p class="sponsor_info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusantium earum blanditiis repellat? Quibusdam illo dolorem vitae fugit est sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, laboriosam voluptates harum atque, tempora laudantium, soluta tempore consequatur vel minima doloremque dolore sed illum blanditiis et velit. Magni et animi incidunt eaque! Itaque vel quidem dolore facilis repellat aut doloremque ipsa dicta veritatis, placeat amet impedit aliquid, distinctio possimus doloribus!
+                </p>
+            </div>
+
+            <div class="title_sponsor_container">
+                <a href="#">
+                    <div class="ts_image">
+                        <img src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="ts_desc">
+                        <p class="sponshor_name">Sponsher name</p>
+                        <p class="sponsher_tag">Title Sponsor</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ats_container">
+                <a href="#" class="ats_card">
+                    <div class="ats_image">
+                        <img src="#" alt="This is an Image">
+                    </div>
+                    <div class="ats_desc">
+                        <p class="sponsor_name">Blank</p>
+                        <p class="sponsor_tag">Styled By partner</p>
+                    </div>
+                </a>
+                <a href="#" class="ats_card">
+                    <div class="ats_image">
+                        <img src="#" alt="This is an image">
+                    </div>
+                    <div class="ats_desc">
+                        <p class="sponsor_name">Blank</p>
+                        <p class="sponsor_tag">Styled By partner</p>
+                    </div>
+                </a>
+            </div>
+
+            <!--CTS Container-->
+            <div class="cts_container">
+                <a href="#" class="ats_card">
+                    <div class="ats_image">
+                        <img src="#" alt="This is image">
+                    </div>
+                    <div class="ats_desc">
+                        <p class="sponsor_name">Sponsor Name</p>
+                        <p class="sponsor_tag">Sponsor Tage</p>
+                    </div>
+                </a>
+                <a href="#" class="ats_card">
+                    <div class="ats_image">
+                        <img src="#" alt="This is image">
+                    </div>
+                    <div class="ats_desc">
+                        <p class="sponsor_name">Sponsor Name</p>
+                        <p class="sponsor_tag">Sponsor Tage</p>
+                    </div>
+                </a>
+            </div>
+
+            <!--Sp_Cat_Container-->
+            <div class="sp_cat_container">
+                <img src="https://www.moodi.org/static/media/pg3_gradient.8c78563208ac778dbc22.png" alt="" class="sp_cat_bg">
+
+                <p class="sp_cat_title"></p>
+                
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                
+                
+            </div>
+
+            <div class="sp_cat_container">
+                <img src="https://www.moodi.org/static/media/media_bg.e28e5b42c2638c258723.png" alt="" class="sp_cat_bg">
+
+                <p class="sp_cat_title">Media Sponsors</p>
+                
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                
+                
+            </div>
+
+            <!--Food and Bewrage Container-->
+            <div class="sp_cat_container">
+                <img src="https://www.moodi.org/static/media/fnb_bg.022df28fd1472b974b44.png" alt="" class="sp_cat_bg">
+
+                <p class="sp_cat_title">Food And Bevrages Partner</p>
+                
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sponsor_row">
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sponsor_card">
+                        <div class="sponsor_img">
+                            <img src="#" alt="image">
+                        </div>
+                        <div class="sponsor_text">
+                            <div class="sponsor_name">Name</div>
+                            <div class="sponsor_tag">Tag</div>
+                        </div>
+                    </a>
+                </div>
+
+                
+                
+            </div>
+             <!-- Write the code of footer here -->
+             <div class="footer">
+                <div class="scroll-animation-outer-frame" id="scroll-animation-outer-frame">
+                    <div class="scroll-animation-inner-frame" id="scroll-animation-inner-frame">
+                        <div class="scroll-animation-inner-frame-transparent">
+                            <!-- <h1>Branching Out, Connecting Worlds</h1> -->
+                            <h1 style = "font-family: Mukta,sans-serif;">From Roots to Reach</h1>
+                            <p class="registration-query-para">Haven't registered yet?</p>
+                            <div class="register-n-events">
+                                <p class="events-button" onclick="location.href='./Samvid Event Page/event.html'">Events</p>
+                                <p class="register" onclick="location.href='reg.html'">Register</p>
+                            </div>
+                        </div>
+                        <img src="../footer-Assets/footer-images/longScreenshot/img1.jpg" class="img1" alt="img1">
+                        <img src="../footer-Assets/footer-images/longScreenshot/img2.jpg" class="img2" alt="img2">
+                        <img src="../footer-Assets/footer-images/longScreenshot/img3.jpg" class="img3" alt="img3">
+                        <img src="../footer-Assets/footer-images/longScreenshot/img4.jpg" class="img4" alt="img4">
+                        <img src="../footer-Assets/footer-images/longScreenshot/img5.jpg" class="img5" alt="img5">
+                    </div>
+                </div>    
+                
+                <div class="bottom">
+                    <hr>
+                    <div class="the-bottom-row">
+                        <div class="event-location">
+                            <h2>EVENT LOCATION</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478.0262183276381!2d81.30743571650356!3d21.215777958639457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293d0fd98b5f0f%3A0xf5808c843a7ce7e2!2sSSTC!5e0!3m2!1sen!2sin!4v1707632867463!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+    
+                        <div class="vertical-line"></div>
+    
+                        <div class="event-policies">
+                            <h2>EVENT POLICIES</h2>
+                            <p>Lorem ipsumlrem dolor sit amet, consectetur adipisicing elit. Consequuntur illum autem quia recusandae officiis dignissimos facilis aut mollitia voluptas, laudantium incidunt nihil eius ea dolorem soluta nam qui. Est, architecto?lo</p>
+                        </div>
+    
+                        <div class="vertical-line"></div>
+    
+                        <div class="feedback-n-support">
+                            <h2>FEEDBACK & SUPPORT</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odit. Blanditiis sed officiis veniam, alias nihil corrupti in molestias accusantium voluptas eos dicta quidem hic earum sunt deleniti, laudantium laborum!</p>
+                        </div>
+                    </div>
+    
+                    <div class="the-logos-row">
+                        <div class="horizontal-line-1"></div>
+                        <a href="https://www.facebook.com/profile.php?id=61556209664123&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/samvid2k24?igsh=aXR6Mjc4NGVmbGtp" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shri-shankaracharya-technical-campus-15ab00131?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target=" _blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-twitter"></i></a> -->
+                        <div class="horizontal-line-2"></div>
+                    </div>
+    
+                    <div class="the-samvid-logo"></div>
+                    <p>© 2024 Samvid, INC.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src = "../Samvid-Contact/contact.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

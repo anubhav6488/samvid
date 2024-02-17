@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    widows: 100vw;
+    background-color: #000;
+    color: #fff;
+    padding-inline: 2%;
+}
+
+.sponsor_home {
+    height: 55vh;
+}
+
+.sponsor_home , .sponsor_page {
+    position: relative;
+    width: 100vw;
+}
+.sponsor_page {
+    overflow: hidden;
+}
+.sponsor_home img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    widows: 100vw;
+}
+.sponsor_title {
+    font-family: Abril Fatface,serif;
+    font-size: 5vw;
+    left: 35vw;
+    position: absolute;
+    top: 5vh;
+}
+.sponsor_info {
+    margin-bottom: 2rem;
+}
+.sponsor_contact, .sponsor_info {
+    font-family: Anek Latin,sans-serif;
+    position: absolute;
+    top: 30vh;
+    width: 70%;
+    left: 20vw;
+    font-size: 18px;
+}
+
+
+/* Title Sponsher container Css */
+.title_sponsor_container {
+    align-items: center;
+    display: flex;
+    height: 22vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.ts_card{
+    border-radius: 10px;
+    color: #bebebe;
+    height: 22vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.ts_card, .ts_image img {
+    width: 20vw;
+}
+.ts_desc {
+    align-items: center;
+    color: #bebebe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sponsor_name, .sponsor_tag {
+    color: #bebebe;
+    font-family: Anek Latin,sans-serif;
+    margin-top: .5vh;
+    text-align: center;
+}
+
+.sponsor_name {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.sponsor_tag {
+    font-size: 1.1vw;
+    font-family: italic;
+}
+
+/* Ats Container*/
+.ats_container {
+    align-items: center;
+    display: flex;
+    height: 20vh;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+    width: 100vw;
+}
+.ats_card, .ats_image img {
+    width: 16vw;
+}
+
+.ats_card {
+    border-radius: 10px;
+    color: #bebebe;
+    font-family: Anek Latin,sans-serif;
+    height: 20vh;
+    text-decoration: none;
+}
+
+.sponsor_name, .sponsor_tag {
+    color: #bebebe;
+    font-family: Anek Latin,sans-serif;
+    margin-top: .5vh;
+    text-align: center;
+}
+.sponsor_name {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.sponsor_tag {
+    font-size: 1.1vw;
+    font-style: italic;
+    text-align: center;
+}
+
+/*CTS Container*/
+.cts_container {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sp_cat_container {
+    height: fit-content;
+    overflow: hidden;
+    padding-bottom: 7vh;
+    padding-top: 3vh;
+    position: relative;
+    width: 100vw;
+}
+.sp_cat_bg {
+    position: absolute;
+    width: 100vw;
+    z-index: -2;
+}
+.sponsor_row {
+    height: 20vh;
+    margin-bottom: 2vh;
+    margin-top: 4vh;
+    width: 100vw;
+    display: flex;
+}
+.sp_cat_title {
+    font-family: Abril Fatface,serif;
+    font-size: 4vw;
+    text-align: center;
+}
+.sponsor_card {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 18vh;
+    text-decoration: none;
+    width: 20vw;
+}
+.sponsor_img {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+.sponsor_img img {
+    max-height: 10vh;
+    max-width: 20vw;
+}
+.sponsor_card, .sponsor_row {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sponsor_name {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.sponsor_tag {
+    font-size: 1.1vw;
+    font-style: italic;
+}
+
+.sponsor_name, .sponsor_tag {
+    color: #bebebe;
+    font-family: Anek Latin,sans-serif;
+    margin-top: .5vh;
+    text-align: center;
+}
+.sp_cat_title {
+    font-family: Abril Fatface,serif;
+    font-size: 4vw;
+    text-align: center;
+}

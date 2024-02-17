@@ -1,3 +1,8 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 .check-check {
   width: 32px;
   height: 32px;
@@ -62,7 +67,7 @@
   display: flex;
   position: relative;
   align-items: center;
-  padding-left: var(--dl-space-space-fiveunits);
+  /* padding-left: var(--dl-space-space-fiveunits); */
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -240,7 +245,6 @@
 .home-heading {
   color: rgb(255, 255, 255);
   font-size: 100px;
-  max-width: 790px;
   font-style: normal;
   font-weight: 500;
 }
@@ -2633,6 +2637,79 @@
 }
 .home-container09 {
   display: contents;
+}
+
+
+
+.footer-section {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 3rem; */
+  width:100%;
+  padding-top:3rem;
+  padding-bottom:3rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid black;
+}
+
+.handles {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 22vh;
+  justify-content: space-around;
+}
+
+.social-links {
+  padding-top: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  display: flex;
+  width: 2em;
+  height: 2em;
+  contain: strict;
+  fill: currentcolor;
+  box-sizing: content-box !important;
+  justify-content: space-between;
+}
+.icon:hover{
+  color:#0000F5;
+}
+/* .ionicon{
+  display:flex ;
+} */
+
+.footer-contact {
+  width: 30%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left:5%;
+  
+}
+
+.footer-contact span {
+  width: 60%;
+  font-size: 2rem;
+  border-bottom: 5px solid black;
+}
+.contactList
+{
+  padding-left:2.5%;
+}
+.contactList:hover{
+  color:#0000F5;
 }
 @media(max-width: 991px) {
   .home-hero {

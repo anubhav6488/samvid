@@ -295,53 +295,98 @@ body::-webkit-scrollbar {
     position: relative;
     -webkit-animation-name: slide_animation;
      animation-name: slide_animation;
-    -webkit-animation-duration: 15s;
-    animation-duration: 15s;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     /* -webkit-animation-direction: alternate;
     animation-direction: alternate; */
     -webkit-animation-play-state: running;
     animation-play-state: running;
+    /* animation-timing-function: steps(13); */
 }
 
 @keyframes slide_animation{
+   
    0%{
     left:0vh;
    }
    0%{
     left:0vh;
    }
-   20%{
+   8.3%{
     left:-38vh;
    }
-   20%{
+   8.3%{
     left:-38vh;
    }
-   40%{
+   16.6%{
     left:-76vh;
    }
-   40%{
+   16.6%{
     left:-76vh;
    }
-   60%{
-    left:-114vh;
+   24.9%{
+    left:-114vh
    }
-   60%{
-    left:-114vh;
+   24.9%{
+    left:-114vh
    }
-   80%{
+   33.2%{
     left:-152vh;
    }
-   80%{
+   33.2%{
     left:-152vh;
    }
-   100%{
+   41.5%{
     left:-190vh;
    }
-   100%{
+   41.5%{
     left:-190vh;
    }
+   49.8%{
+    left:-228vh;
+   }
+   49.8%{
+    left:-228vh;
+   }
+   58.1%{
+    left:-266vh;
+   }
+   58.1%{
+    left:-266vh;
+   }
+   66.4%{
+    left:-304vh;
+   }
+   66.4%{
+    left:-304vh;
+   }
+   74.7%{
+    left:-342vh;
+   }
+   74.7%{
+    left:-342vh;
+   }
+   83%{
+    left:-380vh;
+   }
+   83%{
+    left:-380vh;
+   }
+   91.3%{
+    left:-418vh;
+   }
+   91.3%{
+    left:-418vh;
+   }
+   100%{
+    left:-454vh;
+   }
+   100%{
+    left:-454vh;
+   }
+
 }
 @-webkit-keyframes slide_animation{
     
@@ -525,6 +570,86 @@ body::-webkit-scrollbar {
 
 .big-events .event-images {
     background-image: url("./images/big-events.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+
+.Image-1 .event-images {
+    background-image: url("./images/IMG-20240217-WA0005.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-2 .event-images {
+    background-image: url("./images/IMG-20240217-WA0008.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-3 .event-images {
+    background-image: url("./images/IMG-20240217-WA0009.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-4 .event-images {
+    background-image: url("./images/IMG-20240217-WA0010.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-5 .event-images {
+    background-image: url("./images/IMG-20240217-WA0011.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-6 .event-images {
+    background-image: url("./images/IMG-20240217-WA0012.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-7 .event-images {
+    background-image: url("./images/IMG-20240217-WA0013.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-8 .event-images {
+    background-image: url("./images/IMG-20240217-WA0014.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-9 .event-images {
+    background-image: url("./images/IMG-20240217-WA0015.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-10 .event-images {
+    background-image: url("./images/IMG-20240217-WA0016.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-11 .event-images {
+    background-image: url("./images/IMG-20240217-WA0017.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-12 .event-images {
+    background-image: url("./images/IMG-20240217-WA0018.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.Image-13 .event-images {
+    background-image: url("./images/IMG-20240217-WA0019.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.7;
