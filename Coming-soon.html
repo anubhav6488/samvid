@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding:0;
+        }
+
+        div{
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:15%;
+            margin-left: 15%;
+        }
+
+            
+            div h1 {
+                display: block;
+                width:fit-content;
+                font-family: Mukta,sans-serif;
+                font-size:7rem;
+                font-style: italic;
+            color: #00FFFF;
+            font-family: monospace;
+            overflow: hidden;
+            border-right: .15em solid orange; 
+            white-space: nowrap; 
+            margin: 0 auto; 
+            letter-spacing: .15em;
+            animation: 
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
+            }
+
+        
+            @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+            }
+
+
+            @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+            }
+
+        @media screen and (max-width:480px) {
+            div{
+                margin-top:100%;
+                margin-left:0;
+            }
+            div h1{
+                font-size:3.3rem;
+            }
+        }
+
+    </style>
+</head>
+<body style = "background-color:#53254f;">
+    <div>
+        <h1>
+            COMING SOON
+        </h1>
+    </div>
+</body>
+</html>

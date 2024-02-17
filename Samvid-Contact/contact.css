@@ -6,6 +6,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -17,7 +21,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 .page{
-    background-image: linear-gradient(to bottom, #04021a, #1b0d26, #330e2e, #4c0b2d, #620b26);
+    background-image: linear-gradient(to bottom, #04021a, #1b0d26);
     /* height: 300vh; */
     z-index: -1;
     position: relative;
@@ -168,7 +172,6 @@ body::-webkit-scrollbar {
 .Member-role{
     font-size:1.4vw;
     color:white;
-    text-transform: lowercase;
 }
 .details p{
     text-align:center;
@@ -288,7 +291,7 @@ body::-webkit-scrollbar {
         }
         to{
             /* transform: translateX(var(--change-end)); */
-            transform: translateX(-300vw);
+            transform: translateX(-200vw);
 
         }
 
@@ -326,7 +329,6 @@ body::-webkit-scrollbar {
     .Member-role {
         font-size: 3.5vw;
         color: red;
-        text-transform: lowercase;
     }
 
     .Contact-icons {
