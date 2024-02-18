@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var number = document.getElementById('Number').value;
         var email = document.getElementById('email').value;
         var token = generateToken(8); // Generate a token
-
+        var timestamp = new Date().getTime();
         // Create a FormData object and append the values
         var formData = new FormData();
         formData.append('First_Name', firstName);
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('Number', number);
         formData.append('email', email);
         formData.append('token', token);
+        formData.append('timestamp', timestamp);
 
         // Send the data using fetch
         fetch('https://sheetdb.io/api/v1/7xew1pphufyj5', {
