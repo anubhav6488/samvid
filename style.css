@@ -416,9 +416,9 @@ body::-webkit-scrollbar {
     position:absolute;
     top:0;
     left:0;
-    background: linear-gradient(to right, rgba(116, 59, 90, 1) 0%, rgba(255,255,255,0) 70%);
+    background: linear-gradient(to right, rgb(216, 87, 87) 0%, rgba(33, 15, 201, 0) 70%);
     height:100%;
-    box-shadow: 10px 10px 10px 10px rgba(116, 59, 90, 1);
+    box-shadow: 10px 10px 10px 10px rgb(24, 1, 51);
 }
 .preview-container h1{
     position: absolute;
@@ -430,6 +430,76 @@ body::-webkit-scrollbar {
     font-size: 3.5vh;
     color: white;
 }
+
+.events-page, .events-page-for-mobile {
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(66, 1, 62) 3%, rgb(9, 27, 46) 38%, rgb(45, 33, 218) 68%, rgb(161, 11, 11) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgba(77, 79, 134, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-20%);
+    }
+
+    50% {
+        transform: translateX(-40%);
+    }
+
+    75% {
+        transform: translateX(-20%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 .events-page {
     background-image: linear-gradient(to bottom, #04021a, #1b0d26, #330e2e, #4c0b2d, #620b26);
@@ -450,11 +520,11 @@ body::-webkit-scrollbar {
 }
 
 /* =============================================================== */
-.footlose, .dramatics, .big-events, .literacy, .content-creation, .fashion-show, .big-events, .quiz, .music, .fine-arts {
+.celebrity-night, .hackathon, .big-events, .happy-streets, .dance-compet, .sports, .big-events, .robowar, .music, .fine-arts {
     position: relative;
 }
 
-.footlose p, .dramatics p, .music p, .literacy p, .fine-arts p, .content-creation p, .fashion-show p, .quiz p, .big-events p {
+.celebrity-night p, .hackathon p, .music p, .happy-streets p, .fine-arts p, .dance-compet p, .sports p, .robowar p, .big-events p {
     position: absolute;
     left: 15%;
     top: 75%;
@@ -512,15 +582,15 @@ body::-webkit-scrollbar {
     border-radius: 2vh;
 }
 
-.footlose .event-images {
-    background-image: url("./images/footlose.jpg");
+.celebrity-night .event-images {
+    background-image: url("./images/celebrity-night.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.7;
 }
 
-.dramatics .event-images {
-    background-image: url("./images/dramatics.jpg");
+.hackathon .event-images {
+    background-image: url("./images/hackathon.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -533,8 +603,8 @@ body::-webkit-scrollbar {
     opacity: 0.7;
 }
 
-.literacy .event-images {
-    background-image: url("./images/literacy.jpg");
+.happy-streets .event-images {
+    background-image: url("./images/happy-streets.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -547,22 +617,22 @@ body::-webkit-scrollbar {
     opacity: 0.7;
 }
 
-.content-creation .event-images {
-    background-image: url("./images/content-creation.jpg");
+.dance-compet .event-images {
+    background-image: url("./images/dance.jpeg");
     background-size: cover;
     background-position: center;
     opacity: 0.7;
 }
 
-.fashion-show .event-images {
-    background-image: url("./images/fashion-show.jpg");
+.sports .event-images {
+    background-image: url("./images/sports.jpg");
     background-position: center;
     background-size: cover;
     opacity: 0.7;
 }
 
-.quiz .event-images {
-    background-image: url("./images/quiz.jpg");
+.robowar .event-images {
+    background-image: url("./images/robowar.webp");
     background-size: cover;
     background-position: center;
     opacity: 0.7;
