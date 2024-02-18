@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap');
+
+html{
+}
+
+body{
+    margin: 0;
+    padding:0;
+    /* background-image: linear-gradient(to bottom,#040035, #2f1442, #53254f, #743b5a, #925366); */
+    min-height: 300vh;
+}
+.about{
+    background-image: linear-gradient(to bottom,#040035, #2f1442, #53254f,#743b5a);
+    z-index: 0;
+}
+.about-section{
+    
+    height:200vh;
+    width:100%;
+}
+.section1{
+    height:70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us-img{
+    background-image: url("../images/samvid-official-logo.svg");
+    background-size: cover;
+    height: 55vh;
+    width: 80vh;
+    margin-left: 8%;
+    margin-top: 4%;
+}
+
+.about-us-main{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 3%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    order:0;
+}
+.about-us-heading{
+    font-family: Abril Fatface,serif;
+    font-size: 3.5rem;
+    color:turquoise;
+}
+.about-us-para{
+    padding-top: 3%;
+    max-width: 100%;
+    color:white;
+    font-size: 1.5vw;
+    font-family: 'anek-latin',sans-serif;
+    text-align: justify;
+}
+
+.section2{
+    height:70vh;
+    display:flex;
+    flex-direction: row;
+}
+.theme-img{
+    background-image: url("../images/WorldTreeC.png");
+    background-size: cover;
+    height: 100vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index:1;
+}
+.theme-main{
+    padding-top:10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    max-width: 50%;
+}
+.theme{
+    color: #a87d4ee6;
+    font-family: Anek Latin,sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+
+}
+.theme-heading{
+    font-family: Abril Fatface,serif;
+    font-size: 3.5rem;
+    color:gold;
+}
+.theme-para{
+    max-width: 100%;
+    padding-top: 3%;
+    padding-right:5%;
+    text-align: justify;
+    color:#bebebe;
+    font-family: 'anek-latin',sans-serif;
+    font-size: 1.5vw;
+}
+.Falling-leaves-1,.Falling-leaves-2{
+    margin-top:42%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-left: 15%;
+    z-index:0;
+}
+
+.Falling-leaves-1{
+    height:30vh;
+    width:35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Falling-leaves-2{
+    height:30vh;
+    width:35vw;
+    left: 15%;
+    top: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+
+
+
+#d1 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    animation: falling 4s linear infinite;
+    top:0;
+}
+
+#d2{
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    animation: falling 6s linear infinite;
+    margin-top: 4%;
+}
+
+#d3{
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 5s linear infinite;
+}
+#d4{
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 6s linear infinite;
+}
+#d5{
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 4s linear infinite;
+}
+#d6{
+    background-color: pink;
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 6s linear infinite;
+}
+#d7{
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 4s linear infinite;
+}
+#d8{
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 7s linear infinite;
+}
+#d9{
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 5s linear infinite;
+}
+#d10 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 4s linear infinite;
+}#d11 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 6s linear infinite;
+}#d12 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 7s linear infinite;
+}
+
+#d13 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 7s linear infinite;
+}
+#d14 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 4.5s linear infinite;
+}
+#d14 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 4s linear infinite;
+}
+#d15 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 7s linear infinite;
+}
+#d16 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 5s linear infinite;
+}
+#d17 {
+    background-color: pink;
+    height:2px;
+    width:2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+    animation: falling 6s linear infinite;
+}
+
+@keyframes falling{
+    0%{
+        top:0;
+    }
+   
+    100%{
+        top:95%;
+    }
+}
+
+
+/* Responsivness */
+@media screen and (max-width:700px) {
+    body{
+        min-height:270vh;
+    }
+    .section1{
+        height:100vh;
+        flex-direction: column;
+    }
+    .about-us-main{
+        max-width: 100%;
+        padding-top: 10%;
+    }
+    .about-us-heading{
+        font-size: 3rem;
+    }
+    .about-us-para{
+        padding-top:10%;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-right: 5%;
+    }
+    .about-us-img{
+        width: 49vh;
+        margin-left: -1%;
+        margin-top: 2%;
+        height: 34vh;
+    }
+
+    .section2{
+        flex-direction: column;
+        height:100vh;
+    }
+    .theme-main{
+        height:65vh;
+        max-width:100%;
+    }
+
+    .theme-img{
+        order: 1;
+        width: 100%;
+        height: 45vh
+    }
+    .theme{
+        font-size: 1.5rem;
+    }
+    .theme-heading{
+        font-size:3rem;
+    }
+    .theme-para{    
+        font-size: 1.5rem;
+        padding-top: 5%;
+    }
+
+    .Falling-leaves-1{
+        height: 13vh;
+        width: 75vw;
+        margin-left:13%;
+    }
+    
+    .Falling-leaves-2{
+        height: 13vh;
+        width: 75vw;
+        margin-left:15%;
+    }
+}
