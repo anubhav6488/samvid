@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('email', email);
         formData.append('token', token);
         formData.append('timestamp', timestamp);
+        console.log(timestamp)
 
         // Send the data using fetch
         fetch('https://sheetdb.io/api/v1/7xew1pphufyj5', {
