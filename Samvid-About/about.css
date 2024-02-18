@@ -54,7 +54,7 @@ body{
 .about-us-para{
     padding-top: 3%;
     max-width: 100%;
-    color:white;
+    color:#bebebe;
     font-size: 1.5vw;
     font-family: 'anek-latin',sans-serif;
     text-align: justify;
@@ -313,6 +313,9 @@ body{
     body{
         min-height:270vh;
     }
+    .about-section{
+        height: 210vh;
+    }
     .section1{
         height:100vh;
         flex-direction: column;
@@ -339,7 +342,7 @@ body{
 
     .section2{
         flex-direction: column;
-        height:100vh;
+        height:110vh;
     }
     .theme-main{
         height:65vh;
