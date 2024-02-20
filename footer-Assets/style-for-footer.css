@@ -92,7 +92,7 @@ body {
 }
 
 .register { 
-    background-image: url("footer-images/arrow.svg");
+    background-image: url("./footer-images/arrow.svg");
     background-repeat: no-repeat;
     padding: 1.5vh 3vh 1.5vh 7vh;
     background-position: 1vh;
@@ -318,9 +318,9 @@ body {
 }
 
 .the-samvid-logo {
-    background-image: url('footer-images/samvid-official-logo.svg');
-    height: 30vh;
-    width: 40vh;
+    background-image: url('../images/samvid-main-logo.png');
+    height: 25vh;
+    width: 55vh;
     background-size: cover; 
     margin: 5vh auto;
 }
@@ -522,6 +522,12 @@ body {
 
     .horizontal-line-1, .horizontal-line-2 {
         display: none;
+    }
+
+    .the-samvid-logo {
+        height: 17vh;
+        width: 38vh;
+        margin: 5vh auto;
     }
 }
 

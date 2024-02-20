@@ -10,11 +10,11 @@ html, body {
 }
 
 .samvid-logo {
-    background-image: url("/images/samvid-official-logo.svg");
+    background-image: url("/images/samvid-main-logo.png");
     position: fixed;
-    height: 28vh;
-    width: 36vh;
-    margin: -67vh 0vh 0 -169vh;
+    height: 25vh;
+    width: 55vh;
+    margin: -67vh 0vh 0 -155vh;
     background-size: cover;
     background-color: none;
 }
@@ -253,13 +253,13 @@ path {
     html, body {
         margin: 15% 0 0 5%;
         background-image: none;
-        background-color: white; /*Chnage it if needed*/
+        background-color: rgb(140, 186, 194); /*Chnage it if needed*/
     }
 
     .samvid-logo {
-        height: 23vh;
+        height: 15vh;
         width: 31vh;
-        margin: -90vh 0vh 0 -5vh;
+        margin: -100vh 0vh 0 -5vh;
     }
 
     form {
