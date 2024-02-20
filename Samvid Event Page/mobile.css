@@ -1,58 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @media only screen and (max-width: 768px) {
+    body{
+        margin:0;
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+      }
     
     #main {
-        padding-inline: 2%;
         height: auto ;
+        width:100vw;
     }
     #main .main-heading {
-        width: 44vh;
-        left: 7%;
-        top: -61vh;
+        position: relative;
+        width: 80%;
+        left: 11%;
+        top:0vh;
         box-shadow: -10px 10px 10px #14527e;
     }
 
     #main .pre-show-heading {
-        left: 15%;
-        top: 45vh;
+        left: 16%;
+        top: 5vh;
         font-size: 4vh;
         height: 7vh;
-        width: 40vh;
+        width: 32vh;
         padding: 1vh;
         display: flex;
         text-align: center;
         justify-content: center;
+        position: relative;
+    }
+    .navigation{
+        height:15vh;
     }
 
-    .container img {
+    .sp_cat_bg {
         height: 25vh;
         width: 50vh;
         left: 0;
         top: 0;
+        display: none;
+        position: absolute;
+    }
+    .sp_cat_bg_mob{
+        display: block;
+        height:150vh;
+        width:100vw;
+        position:absolute;
     }
 
     .preshow_name {
-        font-size: 2vh;
+        font-size: 2rem;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
     }
 
     .sponsor_img {
-        height: 9vh;
-        width: 15vh;
+        height: 25vh;
+        width: 100%;
         font-size: 2vh;
+        display: block;
     }
 
     .sponsor_img img {
-        height: 10vh;
-        gap: 1vh;
+        height: 100%;
+        max-width: 100%;
     }
 
     .pre-shows {
+        margin-left: 0vh;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        top: 10vh;
         position: relative;
-        margin-left: 4vh;
+        margin-bottom: 14vh;
+        gap:5vh;
     }
 
     .sp_cat_container {
         position: absolute;
         top: -10vh;
+    }
+
+    .sp_cat_container_tech{
+        width:100vw;
     }
 
     .sp_cat_container {
@@ -62,9 +100,11 @@
     }
 
     .title-heading-events p {
-        height: 3vh;
-        width: 20vh;
-        padding: 1vh 0 3.5vh 0;
+        height: 7vh;
+        width: 70%;
+        padding: 1.5vh 0 3.5vh 0;
+        font-size: 2rem;
+        margin-bottom: 5vh;
     }
 
     .event-list {
@@ -77,7 +117,7 @@
         margin-bottom: 0;
     }
 
-    .sponsor_row .sponsor_card .sponsor_img img {
+    /* .sponsor_row .sponsor_card .sponsor_img img {
         height: 10vh;
         width: 10vh;
     }
@@ -86,13 +126,39 @@
         font-size: 1.5vh;
         margin-top: -8vh;
         font-weight: bold;
+    } */
+
+    .sponsor_row{
+        flex-wrap: wrap;
+        height:70vh;
+        gap:5%;
+    }
+
+    .sponsor_card{
+        width:45%;
+    }
+
+    .cultural_name{
+        background-color: rgb(198, 23, 242);
+    }
+    .sponsor_name{
+        font-size: 1.5rem;
+        background-color: white;
+    }
+
+    .cultural_name{
+        background-color: rgb(198, 23, 242);
+    }
+
+    .tech_text{
+        background-color:transparent;
     }
 
     .sp_cat_container_sports {
         position: relative;
         top: 0;
         left: 0;
-        width: 49vh;
+        width: 100vw;
     }
 
     .title-heading-events .sponsor_row .sponsor_card .sponsor_text .sponsor_name {
