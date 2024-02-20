@@ -72,112 +72,467 @@
 <body>
     <main id="main">
         <!--Navigation Bar -->
-        <div class = "navbar">
-            <a href = "https://www.sstc.ac.in/#"  target ="_blank"class = "nav-img"><img src = "../images/b1-removebg-preview.png"></a>
-            <a href = "event.html">EVENTS</a>
-            <a href = "https://sstcsamvidcodeloom.wixsite.com/sstc" target ="_blank">HACKATHON</a>
-            <a href = "../index.html">HOME</a>
-            <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
-            <a href = "../Coming-soon.html">SPONSORS</a>
-            <a href = "../Samvid-Contact/contact.html">CONTACT US</a>
-            <a href = "../Samvid-About/about.html">ABOUT US</a> 
-        </div>
-        <div class="hamburger">
-            <div class="hamburger-react" aria-expanded="false" id = "hamburger-react" role="button" tabindex="0" style="cursor: pointer; height: 48px; position: relative; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; user-select: none; width: 48px; outline: none; transform: none;">
-                <div id ="bar1" class = "bar1" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
-                <div id = "bar2" class = "bar2" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
-                <div id = "bar3" class = "bar3" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
-            </div>    
-        </div>
-        <div class="mob_nav">
-                <!-- <a href = "https://www.sstc.ac.in/#"  target ="_blank"class = "nav-img"><img src = "../images/logo-02.png"></a> -->
-                <a href = "./event.html">EVENTS</a>
-                <a href = "https://sstcsamvidcodeloom.wixsite.com/sstc" target="_blank">HACKATHON</a>
-                <a href = "../index.html">HOME</a>
-                <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
-                <a href = "../Coming-soon.html">SPONSORS</a>
-                <a href = "../Samvid-Contact/contact.html">CONTACT US</a>
-                <a href = "../Samvid-About/about.html">ABOUT US</a> 
-            <!-- <div class="navbar_icons">
-                <a href="https://www.youtube.com/@iitbmoodindigo" target="_blank" rel="noopener noreferrer">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
-                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/iitbombay.moodi/?hl=en" target="_blank" rel="noopener noreferrer">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
-                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                    </svg>
-                </a>
-                <a href="https://in.linkedin.com/company/mood-indigo" target="_blank" rel="noopener noreferrer">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
-                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-                    </svg>
-                </a>
-                <a href="https://twitter.com/iitb_moodi?lang=en" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
-                    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
-                </svg>
-                </a>
-                <a href="https://www.facebook.com/iitbombay.moodi/" target="_blank" rel="noopener noreferrer">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
-                        <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
-                        </path>
-                    </svg>
-                </a>
-            </div> -->
-        </div>
         <div class="container">
+            <img src="Assests/bg-image.jpg" alt="" class="sp_cat_bg">
+            <div class="navigation">
+                <div class = "navbar">
+                    <a href = "https://www.sstc.ac.in/#"  target ="_blank"class = "nav-img"><img src = "../images/b1-removebg-preview.png"></a>
+                    <a href = "event.html">EVENTS</a>
+                    <a href = "https://sstcsamvidcodeloom.wixsite.com/sstc" target ="_blank">HACKATHON</a>
+                    <a href = "../index.html">HOME</a>
+                    <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
+                    <a href = "../Coming-soon.html">SPONSORS</a>
+                    <a href = "../Samvid-Contact/contact.html">CONTACT US</a>
+                    <a href = "../Samvid-About/about.html">ABOUT US</a> 
+                </div>
+                <div class="hamburger">
+                    <div class="hamburger-react" aria-expanded="false" id = "hamburger-react" role="button" tabindex="0" style="cursor: pointer; height: 48px; position: relative; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; user-select: none; width: 48px; outline: none; transform: none;">
+                        <div id ="bar1" class = "bar1" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+                        <div id = "bar2" class = "bar2" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+                        <div id = "bar3" class = "bar3" style="background: rgb(255, 199, 0); height: 3px; left: 8px; position: absolute; width: 32px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"></div>
+                    </div>    
+                </div>
+                <div class="mob_nav">
+                        <!-- <a href = "https://www.sstc.ac.in/#"  target ="_blank"class = "nav-img"><img src = "../images/logo-02.png"></a> -->
+                        <a href = "./event.html">EVENTS</a>
+                        <a href = "https://sstcsamvidcodeloom.wixsite.com/sstc" target="_blank">HACKATHON</a>
+                        <a href = "../index.html">HOME</a>
+                        <a href = "../reg.html" id="Reg-Btn">REGISTRATION</a>
+                        <a href = "../Coming-soon.html">SPONSORS</a>
+                        <a href = "../Samvid-Contact/contact.html">CONTACT US</a>
+                        <a href = "../Samvid-About/about.html">ABOUT US</a> 
+                    <!-- <div class="navbar_icons">
+                        <a href="https://www.youtube.com/@iitbmoodindigo" target="_blank" rel="noopener noreferrer">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/iitbombay.moodi/?hl=en" target="_blank" rel="noopener noreferrer">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://in.linkedin.com/company/mood-indigo" target="_blank" rel="noopener noreferrer">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/iitb_moodi?lang=en" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                        </svg>
+                        </a>
+                        <a href="https://www.facebook.com/iitbombay.moodi/" target="_blank" rel="noopener noreferrer">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="50" width="50" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+                                <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
             <div class="main-heading">
                 <h1>Events</h1>
                 <div class="circle circle1"></div>
                 <div class="circle circle2"></div>
             </div>
-            <div class="event-list">
-                <div class="event-names">
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <!-- Text or image here in the box -->
-                        <img src="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>fine arts</h3>
+            <div class="pre-show-heading">Pre-Shows</div>
+            <div class="pre-shows">
+                <div class="row row1">
+                    <div class="sponsor_img">
+                        <img src="Assests/shri-ram.jpg" >
                     </div>
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>Dance show</h3>
-
-                    </div>
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <img src="https://images.unsplash.com/photo-1484876065684-b683cf17d276?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>Music </h3>
-                    </div>
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <img src="https://plus.unsplash.com/premium_photo-1664372145408-854a49c26d4f?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>Literacy</h3>
-                    </div>
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <img src="https://images.unsplash.com/photo-1550026593-cb89847b168d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>dramatics</h3>
-                    </div>
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <img src="https://images.unsplash.com/photo-1571924848943-25c2c95bbb4b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>fashion show</h3>
-                    </div>
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <img src="https://images.unsplash.com/photo-1539628399213-d6aa89c93074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>Quiz</h3>
-                    </div>
-                    <div class="event-box">
-                        <div class="tapebox"></div>
-                        <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        <h3>Dj Night</h3>
+                    <div class="preshow_text">
+                        <div class="preshow_name">shri ram ji ki jhanki</div>
                     </div>
                 </div>
+                <div class="row row1">
+                    <div class="sponsor_img">
+                        <img src="Assests/ideathon.png" >
+                    </div>
+                    <div class="preshow_text">
+                        <div class="preshow_name">ideathon</div>
+                    </div>
+                </div>
+                <div class="row row1">
+                    <div class="sponsor_img">
+                        <img src="Assests/happy_streets.png" >
+                    </div>
+                    <div class="preshow_text">
+                        <div class="preshow_name">happy street</div>
+                    </div>
+                </div>
+                
             </div>
+            
+            
+            <div class="event-list">
+                <div class="sp_cat_container">
+                    <!-- <img src="Assests/cultural_bg.jpg" alt="" class="sp_cat_bg"> -->
+    
+                    <div class="title-heading-events">
+                        <p class="sp_cat_title">Cultural Events</p>
+                    </div>
+                    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">Solo Dance</div>
+                            </div>
+                        </div>
+    
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://media.istockphoto.com/id/490614693/photo/contemporary-dance.jpg?s=2048x2048&w=is&k=20&c=yvVJkhU8fCEhpGbEVjS6G7cNOS0wcyAKGXsnoz7BToQ=" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">Duet dance</div>
+                            </div>
+                        </div>
+    
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.pexels.com/photos/175658/pexels-photo-175658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">group dance</div>
+                            </div>
+                        </div>
+    
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/nukkad natak.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">Nukkad Natak</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.unsplash.com/flagged/photo-1589829482673-03413c918c48?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">Cosplay</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.unsplash.com/photo-1611425094224-ab2b0eab0458?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">Short film making</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.unsplash.com/photo-1696946909078-46dc28901ccf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">Solo singing</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://plus.unsplash.com/premium_photo-1682097751142-909eaaf70596?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">solo instrumental</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://media.newyorker.com/photos/646cd8d92414c58c2884e59b/master/pass/jck-battle-rap.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">rap battle</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.unsplash.com/photo-1515104882246-521e5ba18f5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">Solo poetry</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://plus.unsplash.com/premium_photo-1681400601938-9e1de84ab5e9?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">debate</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/elocution.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">elocution</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/water_colouring.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">water colouring</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/digital_illustration.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">digital illustration</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/admaker_ogimage.webp" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">ad making</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/reel_making.png" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name cultural_name">reel making</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Second Container-->
+                <div class="sp_cat_container_sports">
+                    <!-- <img src="Assests/cultural_bg.jpg" alt="" class="sp_cat_bg"> -->
+    
+                    <div class="title-heading-events">
+                        <p class="sp_cat_title sports_heading">sports Events</p>
+                    </div>
+                    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">badmintone</div>
+                            </div>
+                        </div>
+    
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/arm_wrestling.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">arm wrestling</div>
+                            </div>
+                        </div>
+    
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://plus.unsplash.com/premium_photo-1671436822885-0ef977b97959?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D1" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">basketball</div>
+                            </div>
+                        </div>
+    
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="https://images.unsplash.com/photo-1521138054413-5a47d349b7af?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">volleyball</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/kabaddi.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">kabaddi</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/tug_of_war.webp" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">tug of war</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/futsal.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">futsal</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/yard_cricket.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">yard cricketl</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/table_tennis.avif" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">table tennis</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/chess.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">chess</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/carrom.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">carrom</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/power_lifting.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">power lifting</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/kabaddi.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">kabaddi</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/slippery_football.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">slippery football</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/paper_dance.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">paper dance</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/treasure hunt.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">treasure hunt</div>
+                            </div>
+                        </div>
+                        <!-- <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/dodge_ball.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">dodge ball</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/slow_motion_bike.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text">
+                                <div class="sponsor_name">slow-motion bike race</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!--Third Container-->
+                <div class="sp_cat_container_tech">
+                    <!-- <img src="Assests/cultural_bg.jpg" alt="" class="sp_cat_bg"> -->
+    
+                    <div class="title-heading-events">
+                        <p class="sp_cat_title tech_heading">Technical Events</p>
+                    </div>
+                       
+                       
+    
+                    <div class="sponsor_row">
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/hackathon.png" alt="image">
+                            </div>
+                            <div class="sponsor_text tech_text">
+                                <div class="sponsor_name tech_text">code loom : HACKATHON</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/robowar.webp" alt="image">
+                            </div>
+                            <div class="sponsor_text tech_text">
+                                <div class="sponsor_name tech_text"> robo war</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/admaker_ogimage.webp" alt="image">
+                            </div>
+                            <div class="sponsor_text tech_text">
+                                <div class="sponsor_name tech_text">code catalyst: coding cypher</div>
+                            </div>
+                        </div>
+                        <div class="sponsor_card">
+                            <div class="sponsor_img">
+                                <img src="Assests/lan_gaming.jpg" alt="image">
+                            </div>
+                            <div class="sponsor_text tech_text">
+                                <div class="sponsor_name tech_text">Aim bot :lan gaming</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="btn-class">
                 <button id="btn" ><a href="" target="_blank">Get Broucher ⬇️</a></button>
             </div>
