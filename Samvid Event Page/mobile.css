@@ -47,7 +47,7 @@
     }
     .sp_cat_bg_mob{
         display: block;
-        height:150vh;
+        height:155vh;
         width:100vw;
         position:absolute;
     }
@@ -114,7 +114,10 @@
     }
 
     .event-list .sponsor_row {
-        margin-bottom: 0;
+        margin-bottom: 15vh;
+    }
+    #NN{
+        font-size:1.40rem;
     }
 
     /* .sponsor_row .sponsor_card .sponsor_img img {
