@@ -317,7 +317,7 @@ html, body{
         height: 210vh;
     }
     .section1{
-        height:110vh;
+        height:80vh;
         flex-direction: column;
     }
     .about-us-main{
@@ -329,33 +329,33 @@ html, body{
     }
     .about-us-para{
         padding-top:10%;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 400;
         padding-right: 5%;
     }
     .about .about-section .section1 .about-us-img{
-        width: 90%;
-        margin-left: -2%;
-        margin-top: 2%;
-        height: 22vh;
+        width: 85%;
+        margin-left: -1%;
+        margin-top: 19%;
+        height: 18vh;
         z-index: 500;
     }
 
     .section2{
         flex-direction: column;
-        height: 146vh;
+        height: 115vh;
     }
     .theme-main{
         margin-top: 25%;
         padding-top: 2%;
-        height: 115vh;
+        height: 121vh;
         max-width:100%;
     }
 
     .about .about-section .section2 .theme-img{
         order: 1;
         width: 100%;
-        height: 60vh;
+        height: 100vh;
     }
     .theme{
         font-size: 1.5rem;
@@ -364,7 +364,7 @@ html, body{
         font-size:3rem;
     }
     .theme-para{    
-        font-size: 2rem;
+        font-size: 1rem;
         padding-top: 5%;
     }
 
