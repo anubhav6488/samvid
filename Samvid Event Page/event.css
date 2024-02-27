@@ -127,11 +127,12 @@ nav {
   margin-top: 2rem;
   margin-bottom: 8rem;
 }
+
 .sponsor_card {
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 39vh;
   text-decoration: none;
   width: 20vw;
   
@@ -140,7 +141,7 @@ nav {
   align-items: center;
   display: flex;
   height: 35vh;
-  width: 250px;
+  width: 13.021vw;
   justify-content: center;
   transition: all 1s ease ;
 }
@@ -148,17 +149,17 @@ nav {
   transform: scale(1.1);
   cursor: pointer;
   transition: all 1s;
-
 }
+
 .sponsor_img img {
   max-height: 35vh;
   max-width: 20vw;
   border-radius: 10px;
   box-shadow: -10px 10px 4px rgb(165, 46, 239);
-  aspect-ratio: 4/3.9;
+  aspect-ratio: 4/3.8;
 }
-.sponsor_card,
-.sponsor_row {
+
+.sponsor_card, .sponsor_row {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
@@ -172,8 +173,7 @@ nav {
   font-family: Quicksand,sans-serif;
 }
 
-.sponsor_name,
-.sponsor_tag {
+.sponsor_name, .sponsor_tag {
   color: #bebebe;
   /* font-family: Anek Latin, sans-serif; */
   font-family: Quicksand,sans-serif;
@@ -281,3 +281,7 @@ nav {
   color: white;
   background-color: rgb(198, 23, 242);
 };
+
+
+
+
