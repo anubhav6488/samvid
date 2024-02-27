@@ -156,7 +156,6 @@ nav {
   max-width: 20vw;
   border-radius: 10px;
   box-shadow: -10px 10px 4px rgb(165, 46, 239);
-  aspect-ratio: 4/3.8;
 }
 
 .sponsor_card, .sponsor_row {
