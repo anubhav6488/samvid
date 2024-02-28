@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Show</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/quiz-register-background.png");
+            /* background-color: #6713b1; */
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #e5c599 ; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: #6713b1;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: #e1cdb1;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .quiz-info {
+            position: relative;
+            top: 5vh;
+            left: 3vw;
+            height: 80vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .quiz-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+        }
+
+        .quiz-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #d2d5ac;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .quiz-event-info {
+            margin-left: 3vh;
+            background-color: rgba(0, 0, 0, 0.1);   
+            padding: 1vw;
+            position: relative;
+            top: -7vh;
+            border-radius: 4px;
+        }
+        
+        .mark-calender {
+                position: relative;
+                top: -8vh;
+        }
+
+        .fees {
+            font-weight: bold;
+            color: #e1c3c8;
+            position: relative;
+            top: -2vh;
+        }
+
+        .bottom {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: 8px;
+                background-color: #62b4df;
+                position: absolute;
+                top: -8vh;
+                width: 88.5vw;
+                left: 3.5vw;
+                top: 58vh;
+            }
+
+            .categories, .rules, .fees{
+                background-color: rgb(137, 103, 90);
+                padding: 1vh 1vw;
+                border-radius: 5px;
+                margin: 2vh auto;
+            }
+
+            .fees {
+                top: 0vh;
+                color: white;
+            }
+
+            .categories p, .fees p, .rules p {
+                color: #74ce88;
+                font-weight: bold;
+            }
+
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 150vh;
+            }
+            
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+            }
+            
+            .quiz-info {
+                width: 90vw;
+                height: 150vh;
+            }
+
+            .quiz-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .quiz-info h1 {
+                font-size: 10vw;
+                top: 4vh;
+                white-space: nowrap;
+                /* margin: 0 auto; */
+                left: 33vw;
+            }
+
+            .quiz-event-info {
+                position: absolute;
+                top: 15vh;
+                padding: 2vw;
+                left: -3vw;
+                width: 85vw;
+            }
+
+            .mark-calender {
+                position: absolute;
+                top: 68vh;
+                margin-right: 2px;
+            }
+
+            .bottom {
+                top: 78vh;
+                left: 2.5vw;
+                flex-direction: column;
+            }
+
+            .categories, .fees, .rules {
+                padding: 1vh 7vw;
+            }
+
+            .fees {
+                padding: 1vh 5vw;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-info">
+        <p class="register-button" onclick="window.location.href='https://forms.gle/v5VPhy4foaDCVB2c7'">Register here</p>
+        <h1>QUIZ</h1>
+        <p class="quiz-event-info"><b>Unleash your inner Genius!</b> <br> <br>
+            <b>Calling all brainiacs for the ultimate inter-college quiz showdown! </b><br>
+            Think you know it all? Put your knowledge to the test in a thrilling competition that spans across various subjects and ignites your intellectual curiosity. <br>
+            <b>Form your A-team, battle it out with fellow scholars, and win bragging rights (and awesome prizes!)</b>
+            
+            <b>Don't miss this chance to: </b><br>
+            <span style="color: aqua;">
+            &emsp;1.  Challenge yourself and your team: Test your knowledge and problem-solving skills in a fast-paced environment. <br>
+            &emsp;2.  Connect with fellow students: Network, build friendships, and forge connections with peers from other colleges. <br>
+            &emsp;3. Win exciting prizes: Show off your academic prowess and claim your well-deserved rewards.</span>
+        </p>
+        <p class="mark-calender"><b>Mark your calendars and get ready to battle for the top spot.</b></p>
+
+        <div class="bottom">
+            <div class="categories">
+                <h2>CATEGORIES</h2>
+                <p>&emsp;1. Solo Quiz Competition</p>
+                <p>&emsp;2. Duet Quiz Competition</p>
+            </div>
+            <div class="rules">
+                <h2>RULES</h2>
+                <p>&emsp;1. Solo Quiz Competition.</p>
+                <p>&emsp;2. Duet Quiz.</p>
+            </div>
+            <div class="fees">
+                <h2>ENTRY FEES</h2>
+                <p>&emsp;1. Solo Quiz Rs. 300/- only.</p>
+                <p>&emsp;2. Duet Quiz Rs. 500/- only.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
