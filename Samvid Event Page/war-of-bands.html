@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAR OF BANDS - Samvid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/war-of-bands-registration-background.jpg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #b6ace1 ; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: black;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: #d1dcec;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 80vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #d2d5ac;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #9bd7a4;
+            position: absolute;
+            top: 45vh;
+            width: 90vw;
+            left: 2vw;
+        }
+
+        .feature, .fee {
+            background-color: rgb(64, 42, 87);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 40vw;
+            height: 35vh;
+        }
+
+        .feature h2, .fee h2 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .feature p, .fee p {
+            color: #cbcbdf;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 180vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 25vh;
+                left: 2vw;
+                width: 82vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 160vh;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #a697e9;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 18vw;
+            }
+
+            .bottom-section {
+                top: 68vh;
+                flex-direction: column;
+            }
+
+            .feature, .fee {
+                padding: 1vh 5vw;
+                width: 70vw;
+            }
+
+            .fee {
+                padding: 1vh 5vw;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://forms.gle/TPpaU7j8MLA4uBjs8'">Register here</p>
+        <h1>WAR OF BANDS</h1>
+        <p class="event-details">
+            <b>SAMVID Presents: </b> - The Ultimate War of Bands. Where music becomes the weapon and the stage your battlefield. WAR OF BANDS is more than just a music competition; it's a celebration of the passion, creativity, and unyielding spirit that drives young musicians. Be a part of this musical extravaganza and witness the birth of future stars!
+
+            War Of Bands is the premier musical showdown for bands across the region. This electrifying event is where raw talent, passion, and sonic innovation collide. Witness as bands representing the finest musical prowess from different bands lock horns in an epic struggle for supremacy. Get ready to immerse yourself in diverse musical styles, experience unforgettable performances, and feel the energy as the crowd roars.
+        </p>
+
+        <div class="bottom-section">
+            <div class="feature">
+                <h2>Key Features</h2>
+                <p>&emsp;1. Diverse Musical Styles: Explore an electrifying mix of genres.</p>
+                <p>&emsp;2. Expert Judging Panel: Impress with originality and skill.</p>
+                <p>&emsp;3. Audience Participation: Feel the crowd shape each performance.</p>
+                <p>&emsp;4. Prizes and Recognition: Win exciting rewards and acclaim.</p>          
+            </div>
+            <div class="fee">
+                <h2>ENTRY FEES</h2>
+                <p>&emsp;Rs. 1000 per team</p>
+                <p>&emsp;<u>Note:</u> Team will be disqualified if the time limit exceeds.</p>
+            </div>
+        </div>
+    </div>
+</body>
