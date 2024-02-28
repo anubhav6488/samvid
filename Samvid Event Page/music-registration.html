@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samvid Music Event</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/music-registration-background.jpg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #b6ace1 ; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: black;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: #d1dcec;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -4vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 80vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #d2d5ac;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #086c79;
+            position: absolute;
+            width: 90vw;
+            left: 2vw;
+            top: 45vh;
+        }
+
+        .category, .rule, .fee {
+            background-color: rgb(199, 221, 227);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);            
+            border-radius: 5px;
+            margin: 2vh auto;
+        }
+
+        .category h2, .rule h2, .fee h2 {
+            color: #500404;
+            font-weight: bold;
+        }
+
+        .category p, .rule p, .fee p {
+            color: #030346;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 190vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 22vh;
+                left: 3vw;
+                width: 80vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 180vh;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 11vw;
+            }
+
+            .bottom-section {
+                top: 65vh;
+                left: 2.5vw;
+                flex-direction: column;
+            }
+
+            .category, .fee, .rule {
+                padding: 1vh 5vw;
+                width: 70vw;
+            }
+
+            .fee {
+                padding: 1vh 5vw;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://forms.gle/qcofJ5JMRAsuHCTh7'">Register here</p>
+        <h1>Samvid Music Event</h1>
+        <p class="event-details">
+            Get ready for the Intercollegiate Music Showdown at Samvid a celebration of musical talent and unity. Showcase your skills, compete with the best, and experience the thrill of live performances. Beyond the competition, connect with fellow music enthusiasts, forming bonds that go beyond the stage. Whether you're a solo sensation, a masterful instrumentalist, or part of a harmonious duet or group, Samvid's Music Event is your platform to express, connect, and leave a lasting musical impression. Join us in this symphony of talent, where notes transform into stories, and melodies resonate with the collective heartbeat of the audience.
+        </p>
+        
+
+        <div class="bottom-section">
+            <div class="category">
+                <h2>CATEGORIES</h2>
+                <p>&emsp;1. Solo Singing Competition</p>
+                <p>&emsp;2. Solo Instrumental Competition</p>
+                <p>&emsp;3. Duet Song Competition</p>
+                <p>&emsp;4. Group Song Competition</p>
+            </div>
+            <div class="rule">
+                <h2>RULES</h2>
+                <p>&emsp;1. <u>Solo Singing</u>: 2 mins, no live music, any language, vocals judged solely.</p>
+                <p>&emsp;2. <u>Solo Instrumental</u>: 3 mins, any genre allowed, participant carries instrument.</p>
+                <p>&emsp;3. <u>Duet Song</u>: 2 mins, carry your instrument, any language, minimum 4 entries required.</p>
+                <p>&emsp;4. <u>Group Song</u>: 3 mins, 4-6 members, carry your instrument, minimum 4 entries required.</p>
+            </div>
+            <div class="fee">
+                <h2>ENTRY FEES</h2>
+                <p>&emsp;Solo Singing - Rs 300/-
+
+</p>
+                <p>&emsp;Solo Instrumental - Rs 400/-</p>
+                <p>&emsp;Duet Song - Rs 500/-</p>
+                <p>&emsp;Group Song - Rs 600/-</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
