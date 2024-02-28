@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footloose Dance Event</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("Assests/footlose-background.jpg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #b6ace1 ; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: black;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: #d1dcec;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 2vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 80vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #d2d5ac;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #d19a78;
+            position: absolute;
+            top: -8vh;
+            width: 88.5vw;
+            left: 3.5vw;
+            top: 50vh;
+        }
+
+        .category, .rule, .fee {
+            background-color: rgb(213, 144, 116);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+        }
+
+        .category h2, .rule h2, .fee h2 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .category p, .rule p, .fee p {
+            color: #cbcbdf;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 190vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 16vh;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 170vh;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 4vw;
+            }
+
+            .bottom-section {
+                top: 70vh;
+                left: 2.5vw;
+                flex-direction: column;
+            }
+
+            .category, .fee, .rule {
+                padding: 1vh 5vw;
+                width: 70vw;
+            }
+
+            .fee {
+                padding: 1vh 5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://forms.gle/qcofJ5JMRAsuHCTh7'">Register here</p>
+        <h1>Footloose Dance Event</h1>
+        <p class="event-details">
+            Footloose, a spirited celebration of movement and rhythm, invites individuals to liberate their inner dancer and revel in the joy of self-expression. This vibrant event transcends boundaries, welcoming seasoned performers and enthusiastic beginners alike to share the stage. From solo acts that showcase personal flair to dynamic duets that weave storytelling into synchronized moves, and energetic group performances that merge diverse dance styles, Footloose fosters a community where creativity flourishes. With each beat, participants immerse themselves in the magic of dance, creating an electric atmosphere that resonates with passion, unity, and the sheer delight of letting loose on the dance floor.
+        </p>
+
+        <div class="bottom-section">
+            <div class="category">
+                <h2>CATEGORIES</h2>
+                <p>&emsp;1. Solo Dance Competition</p>
+                <p>&emsp;2. Duet Dance Competition</p>
+                <p>&emsp;3. Group Dance Competition</p>
+            </div>
+            <div class="rule">
+                <h2>RULES</h2>
+                <p>&emsp;1. <u>Solo Dance</u>: 3 mins, solo flair, no live music, your style, your accessories.</p>
+                <p>&emsp;2. <u>Duet Dance</u>: 5 mins, sync up, manage audio and props, watch the clock.</p>
+                <p>&emsp;3. <u>Group Dance</u>: 12 mins, 4-30 members, no live music, coordinate audio, props, and time.</p>
+            </div>
+            <div class="fee">
+                <h2>ENTRY FEES</h2>
+                <p>&emsp;Solo - Rs 250/-</p>
+                <p>&emsp;Duet - Rs 400/-</p>
+                <p>&emsp;Group - Rs 800/-</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
