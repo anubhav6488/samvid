@@ -132,11 +132,12 @@ nav {
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 39vh;
+  /* height: 30vh; */
   text-decoration: none;
-  width: 20vw;
-  
+  /* width: 20vw; */
+  /* background-color: red; */
 }
+
 .sponsor_img {
   align-items: center;
   display: flex;
@@ -245,7 +246,7 @@ nav {
   background-image: url(Assests/sports_bg.jpg);
   background-size: cover;
   background-position: center;
-  padding-bottom: 7vh;
+  /* padding-bottom: 0vh; */
 }
 .sports_heading{
  color: #000;
@@ -281,6 +282,10 @@ nav {
   background-color: rgb(198, 23, 242);
 };
 
+.event-list .sp_cat_container .row-2 {
+  position: relative;
+  left: 100vw;
+}
 
 
 
