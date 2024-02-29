@@ -731,6 +731,11 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.visit-event-page {
+    margin-top: 30vh;
+    font-size: 1.5vw;
+}
+
 /* ================================================================================================= */
 /* ================================================================================================= */
 /* ======================= R E S P O N S I V E N E S S    B E G I N S    H E R E =================== */
@@ -740,6 +745,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 768px) {
     /* making events page disaply none to avoid any inturruption */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     .events-page {
         display: none;
     }
@@ -831,6 +837,12 @@ body::-webkit-scrollbar {
         display: flex;
         justify-content: center;
         margin: 20vh 4vh 18vh 4vh;;
+    }
+
+    .visit-event-page {
+        margin-top: 8vh;
+        font-size: 4vw;
+        font-family: 'Roboto';
     }
 
 
