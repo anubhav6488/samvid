@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTSAL TOURNAMENT - SSTC SAMVID24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html,
+        body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/futsal-registration-background.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #a796f1;
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: rgb(173, 114, 178);
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #ffffff;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #fa8a55;
+            position: absolute;
+            top: 40vh;
+            width: 89vw;
+            left: 2vw;
+            padding: 1vh;
+        }
+
+        .fee,
+        .venue,
+        .contact,
+        .timing,
+        .game,
+        .rules {
+            background-color: rgb(180, 184, 220);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 15vw;
+            height: 40vh;
+        }
+
+        .fee h2,
+        .timing h2,
+        .contact h2,
+        .venue h2,
+        .game h2,
+        .rules h2 {
+            color: #02042a;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .fee p,
+        .timing p,
+        .contact p,
+        .venue p,
+        .game p,
+        .rules p {
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 3.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+            left: 3vw;
+        }
+
+        .venue p {
+            position: relative;
+            top: -1vh;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .venue {
+            width: 12vw;
+        }
+
+        .rules {
+            width: 20vw;
+        }
+
+        .fee {
+            width: 10vw;
+        }
+
+        .contact {
+            width: 17vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            html,
+            body {
+                height: 230vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+                background-color: #6f7fe6;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 25vh;
+                left: 2vw;
+                width: 80vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 210vh;
+                position: relative;
+                left: 3vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #accc5c;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 5vw;
+            }
+
+            .bottom-section {
+                top: 55vh;
+                flex-direction: column;
+                width: 86vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .fee,
+            .venue,
+            .contact,
+            .timing,
+            .game,
+            .rules {
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: antiquewhite;
+            }
+
+            .fee p,
+            .venue p,
+            .timing p,
+            .game p,
+            .rules p {
+                color: #02042a;
+            }
+
+            .venue {
+                height: 28vh;
+            }
+
+            .venue .location {
+                left: 18vw;
+                width: 22vw;
+            }
+
+            .venue .location:hover {
+                width: 23vw;
+            }
+
+            .fee {
+                height: 15vh;
+            }
+
+            .timing {
+                height: 15vh;
+            }
+
+            .contact {
+                height: 25vh;
+            }
+
+            .game {
+                height: 18vh;
+            }
+
+            .rules {
+                height: 25vh;
+            }
+
+            .contact .contact-row p {
+                color: #02042a;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="event-info">
+        <p class="register-button"
+            onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScymMSPAMTVmRWRJi-96MBMGbM7YWpi3LOmd_7SSx-HGDnubg/viewform'">Register
+            here</p>
+        <h1>FUTSAL TOURNAMENT</h1>
+        <p class="event-details">
+            Get ready to immerse yourself in the thrilling world of football frenzy at the upcoming Futsal Tournament during SSTC SAMVID24! Whether you're a seasoned player with a knack for the ball or a newcomer eager to dive into the world of intense matches and competitive fun, this event is tailor-made for you.
+            Join us in showcasing your skills on the futsal pitch, where every dribble, pass, and goal counts. It's not just a tournament; it's an opportunity to be part of the ultimate futsal experience. Don't miss out on the chance to secure your spot among the finest players and compete for glory!      
+        </p>
+        <div class="bottom-section">
+            <div class="venue">
+                <h2>VENUE</h2>
+                <p>10-12 March 2024</p>
+                <div class="location"
+                    onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>SSTC Bhilai, Sports Complex</p>
+            </div>
+
+            <div class="game">
+                <h2>EVENT DETAILS</h2>
+                <p><u>Team Size:</u> 5-7 players</p>
+                <p><u>Game Duration:</u> 20 minutes per match</p>
+            </div>
+
+            <div class="rules">
+                <h2>RULES</h2>
+                <p>1. Teams must consist of 5-7 players.</p>
+                <p>2. Each match has a duration of 20 minutes.</p>
+                <p>4. Non-marking shoes are mandatory.</p>
+            </div>
+
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Shashank Singh Rajput: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:9522291294'"
+                        style="cursor: pointer;">9522291294</p>
+                </div>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Khushpal Singh: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:7587328318'"
+                        style="cursor: pointer;">75873 28318</p>
+                </div>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Yuvraj Singh: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:7869229983'"
+                        style="cursor: pointer;">78692 29983</p>
+                </div>
+            </div>
+
+            <div class="fee">
+                <h2>FEE</h2>
+                <p>₹500 per team</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
