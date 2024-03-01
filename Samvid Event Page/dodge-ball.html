@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DODGEBALL TOURNAMENT - SAMVID 2K24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/dodge-ball-registration-background.jpeg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #aca0e7; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: #020202;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: #96b7db;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(29, 43, 89, 0.5);
+            border-radius: 5px;
+            padding: 4vh 2vw;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #dfe5ec;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #525252;
+            position: absolute;
+            top: 35vh;
+            width: 90vw;
+            left: 1vw;
+            padding-left: 1vw;
+            padding-right: 1vw;
+        }
+
+        .fee, .venue, .contact, .rules {
+            background-color: rgb(228, 229, 238);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 15vw;
+            height: 48vh;
+        }
+
+        .fee h2, .contact h2, .rules h2, .venue h2{
+            color: #02042a;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .fee p, .contact p, .rules p, .venue p{
+            color: #917272;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 2.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+            left: 2vw;
+        }
+
+        .venue p {
+            position: relative;
+            top: -1vh;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center ;
+        }
+
+        .rules {
+            width: 40vw;
+        }
+
+        .rules p {
+            font-size: 1vw;
+            text-align: left;
+        }
+
+        .venue {
+            width: 10vw;
+        }
+
+        .contact {
+            width: 12vw;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 260vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 30vh;
+                left: 2vw;
+                width: 86vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 240vh;
+                position: relative;
+                left: 2.5vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #ffcf75;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                /* white-space: nowrap; */
+                text-align: center;
+                left: 23vw;
+            }
+
+            .bottom-section {
+                top: 65vh;
+                flex-direction: column;
+                width: 90vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .fee, .venue, .contact, .rules {
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: antiquewhite;
+            }
+
+            .venue {
+                height: 30vh;
+            }
+
+            .venue .location {
+                left: 18vw;
+                width: 22vw;
+                height: 12vh;
+            }
+
+            .venue .location:hover {
+                width: 23vw;
+                left: 18vw;
+            }
+
+            .fee {
+                height: 18vh;
+            }
+
+            .contact {
+                height: 25vh;
+            }
+
+            .rules {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfDjtA7Owlny5uyIaDroUwn2zp-Z5B1meHjp5OddHMSGcqwOA/viewform'">Register here</p>
+        <h1>DODGEBALL TOURNAMENT</h1>
+        <p class="event-details">
+            Join us for an exhilarating Dodgeball Tournament! Whether you're a seasoned player or new to the game, this event promises intense matches and competitive fun. Show off your dodging and throwing skills, and compete for victory in this thrilling tournament. Register now and be part of the ultimate dodgeball experience!        </p>
+        <div class="bottom-section">
+            <div class="venue">
+                <h2>VENUE & DATE</h2>
+                <p>10 March 2024</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>SSTC Bhilai</p>
+            </div>  
+
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Afeef: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:7999292918'" style="cursor: pointer;">7999292918</p>
+                </div>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Abhay:&emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:7067328563'" style="cursor: pointer;">7067328563</p>
+                </div>                
+            </div>  
+
+            <div class="rules">
+                <h2>RULES</h2>
+                <p>&emsp;1. Player, ball, court, and game specifics determined by organizers.</p>
+                <p>&emsp;2. Players remain in court unless collecting dead balls.</p>
+                <p>&emsp;3. Players can leave to collect balls but no throwing outside court; eliminates player.</p>
+                <p>&emsp;4. Headshot rules vary, throwing player or struck player may be eliminated.</p>
+                <p>&emsp;5. Struck players caught before ball becomes dead are eliminated.</p>
+                <p>&emsp;6. Player catching a ball eliminates the throwing player.</p>
+            </div>
+
+            <div class="fee">
+                <h2>ENTRY FEE</h2>
+                <p>&emsp;Rs. 150 per participant</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
