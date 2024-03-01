@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BADMINTON - SSTC</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assets/badminton.jpeg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: rgb(239, 105, 43) ; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: rgb(207, 159, 137);
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 8vw;
+            height: 84vh;
+            width: 80vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #bfc0e4;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #a7c3ed;
+            position: absolute;
+            top: 47vh;
+            width: 80vw;
+            left: 2vw;
+        }
+
+        .fee, .venue, .contact, .timing{
+            background-color: rgb(81, 148, 94);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 15vw;
+            height: 35vh;
+        }
+
+        .fee h2, .timing h2, .contact h2, .venue h2{
+            color: #f2f4e9;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .fee p, .timing p, .contact p, .venue p{
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 4.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+        }
+
+        .venue p {
+            position: relative;
+            top: -1vh;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 210vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 25vh;
+                left: 2vw;
+                width: 82vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 195vh;
+                position: relative;
+                left: 2.5vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #a697e9;
+                position: absolute;
+                font-size: 6vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 8vw;
+            }
+
+            .bottom-section {
+                top: 75vh;
+                flex-direction: column;
+                width: 90vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .fee, .venue, .contact, .timing {
+                padding: 1vh 5vw;
+                width: 60vw;
+            }
+
+            .venue {
+                height: 30vh;
+            }
+
+            .venue .location {
+                left: 18vw;
+                width: 22vw;
+            }
+
+            .venue .location:hover {
+                width: 23vw;
+            }
+
+            .fee {
+                height: 15vh;
+            }
+
+            .timing {
+                height: 15vh;
+            }
+
+            .contact {
+                height: 25vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe_dKNWKxTw_gOAqmPWxoDVNM3g1Syuq8XqCkHh8Fqd5MjGkA/viewform'">Register here</p>
+        <h1>BADMINTON TOURNAMENT</h1>
+        <p class="event-details">
+            Gear up for the smash of the year! The SAMVID 2K24 Badminton Championship is back, bigger and better than ever. Get ready to unleash your skills, battle it out on court, and win epic prizes, prestigious medals, and valuable certificates. ️
+
+            Whether you're a seasoned pro or a rising star, this is your chance to shine. Compete in singles, doubles, or mixed categories, and experience the thrill of victory. The competition promises intense matches, camaraderie, and unforgettable memories.
+            
+            Don't miss out on this opportunity to showcase your talent, win amazing rewards, and be crowned the badminton champion of SAMVID 2K24!
+            
+            Registrations are now open! Sign up now and get ready to ace your game!
+            
+            P.S. Don't forget to spread the word and tag your badminton buddies!
+            
+               </p>
+        <div class="bottom-section">
+            <div class="venue">
+                <h2>VENUE & DATE</h2>
+                <p>11-13 MARCH 2024</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>Badminton Court, SSIMS</p>
+            </div>
+            <div class="fee">
+                <h2>ENTRY FEES</h2>
+                <p>&emsp;Singles : Rs.150/-</p>
+                <p>&emsp;Doubles : Rs.300/-</p>
+                <p>&emsp;Mixed Doubles : Rs.300/-</p>
+            </div>
+            <div class="timing">
+                <h2>RULES</h2>
+                <p  style = "text-align: left;">1. International rules will be applied.</p>
+                <p  style = "text-align: left;">2. Tournament is for college students only.</p>
+
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <div class="contact-row">
+                    <p style="color: rgb(191, 225, 209);">Ansh Gupta: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:9406348132'" style="cursor: pointer;">9174389992</p>
+                </div>
+                <div class="contact-row">
+                    <p style="color: rgb(191, 225, 209);text-align: left;">Shashwat Tripathi:&emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:9770370187'" style="cursor: pointer;">7389687002</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>
