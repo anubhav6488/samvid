@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENNIS TOURNAMENT - SAMVID 24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/table-tennis-registration-background.jpeg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #aba9e9; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: #bcc0de;
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #eeeeef;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #c31c43;
+            position: absolute;
+            top: 47vh;
+            width: 90vw;
+            left: 1vw;
+            padding-left: 1vw;
+            padding-right: 1vw;
+        }
+
+        .fee, .venue, .contact, .timing, .game, .rules {
+            background-color: rgb(117, 156, 234);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 15vw;
+            height: 35vh;
+        }
+
+        .fee h2, .timing h2, .contact h2, .venue h2, .game h2, .rules h2{
+            color: #02042a;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .fee p, .timing p, .contact p, .venue p, .game p, .rules p{
+            color: #313135;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 4.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+        }
+
+        .venue p {
+            position: relative;
+            top: -1vh;
+        }
+
+        .contact-row {
+            text-align: center;
+        }
+
+        .rules p{
+            font-size: 1vw;
+        }
+
+        .fee p {
+            font-size: 1vw;
+
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 280vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 25vh;
+                left: 2vw;
+                width: 82vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 260vh;
+                position: relative;
+                left: 2.5vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #a697e9;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 20vw;
+            }
+
+            .bottom-section {
+                top: 73vh;
+                flex-direction: column;
+                width: 90vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .fee, .venue, .contact, .timing, .game, .rules {
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: #fcf8ec;
+            }
+
+            .venue {
+                height: 33vh;
+            }
+
+            .venue .location {
+                left: 18vw;
+                width: 22vw;
+            }
+
+            .venue .location:hover {
+                width: 23vw;
+            }
+
+            .fee {
+                height: 30vh;
+            }
+
+            .timing {
+                height: 15vh;
+            }
+
+            .contact {
+                height: 18vh;
+            }
+
+            .game {
+                height: 20vh;
+            }
+
+            .rules {
+                height: 32vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfIAxK5_iyDweIRschXJbpljtnXy_JBhuLn8iBbS3jIpYr0NA/viewform'">Register here</p>
+        <h1>TABLE TENNIS</h1>
+        <p class="event-details">          
+            Serve up your skills and get ready to dominate the competition at the ultimate tennis showdown! Calling all tennis enthusiasts, whether you're a seasoned player with a killer backhand or a newcomer eager to make your mark. This is your golden opportunity to showcase your aces, perfect your serves, and compete against the best in the game.
+            Imagine the thrill of stepping onto the court, the sun shining, and the crowd eagerly anticipating your every move. Feel the excitement building as you strive for victory and tennis glory. This isn't just a tournament; it's your chance to etch your name in the annals of tennis greatness.
+        </p>
+        <div class="bottom-section">
+            <div class="venue">
+                <h2>VENUE & DATE</h2>
+                <p>11-12 March 2024</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/fEcZa4C8J2wng1Tk7'"></div>
+                <p>SSIMS Bhilai, Tennis Courts.</p>
+            </div>  
+
+            <div class="game">
+                <h2>GAME FORMAT</h2>
+                <p>Single elimination tournament.</p>
+            </div>
+            <div class="fee">
+                <h2>ENTRY FEES</h2>
+                <p><u>Singles:</u> Rs. 149/- per participant. <br><u>1v1:</u> Rs. 99/- per participant</p>
+                <p></p>
+                <h2>EVENT TIMING</h2>
+                <p>09:30 AM onwards</p>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <div class="contact-row">
+                    <p class="phone-number" onclick="window.location.href='tel:7225834766'" style="cursor: pointer;">7225834766</p>
+                </div>
+            </div> 
+            <div class="rules">
+                <h2>GENERAL RULES</h2>
+                <p>College students only with ID.</p>
+                <p>No white T-shirts. Knockout format.</p>
+                <p>Best of 3 (quarters); Best of 5 (semis & final).</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
