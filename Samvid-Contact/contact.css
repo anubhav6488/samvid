@@ -249,7 +249,7 @@ body::-webkit-scrollbar {
     }
 
     .Contact-team .Contact-team-member-container{
-        height:39vh;
+/*         height:39vh; */
         overflow: hidden;
         width:1000vw;
         position: relative;
@@ -317,7 +317,7 @@ body::-webkit-scrollbar {
     }
 
     .Contact-card{
-        height: 300px;
+        height: fit-content;
         margin-bottom: 2vh;
         margin-top: -5vw;
         width: 55vw;
