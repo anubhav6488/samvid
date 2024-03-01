@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUG OF WAR REGISTRATION - SAMVID 2K24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/tug-of-war-registration-background.jpg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #a796f1; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: rgb(173, 114, 178);
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #ffffff;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #8ece86;
+            position: absolute;
+            top: 32vh;
+            width: 89vw;
+            left: 2vw;
+            padding: 1vh;
+        }
+
+        .fee, .venue, .contact, .timing, .game, .rules{
+            background-color: rgb(180, 184, 220);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 15vw;
+            height: 50vh;
+        }
+
+        .fee h2, .timing h2, .contact h2, .venue h2, .game h2, .rules h2{
+            color: #02042a;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .fee p, .timing p, .contact p, .venue p, .game p, .rules p{
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 3.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+            left: 3vw;
+        }
+
+        .venue p {
+            position: relative;
+            top: -1vh;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .venue {
+            width: 12vw;
+        }
+
+        .rules {
+            width: 20vw;
+        }
+
+        .fee {
+            width: 10vw;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 260vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+                background-color: #6f7fe6;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 25vh;
+                left: 2vw;
+                width: 82vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 240vh;
+                position: relative;
+                left: 2.5vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #2507ae;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 22vw;
+            }
+
+            .bottom-section {
+                top: 55vh;
+                flex-direction: column;
+                width: 86vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .fee, .venue, .contact, .timing, .game, .rules {
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: antiquewhite;
+            }
+
+            .fee p, .venue p, .timing p, .game p, .rules p {
+                color: #02042a;
+            }
+
+            .venue {
+                height: 33vh;
+            }
+
+            .venue .location {
+                left: 18vw;
+                width: 22vw;
+            }
+
+            .venue .location:hover {
+                width: 23vw;
+            }
+
+            .fee {
+                height: 22vh;
+            }
+
+            .timing {
+                height: 15vh;
+            }
+
+            .contact {
+                height: 25vh;
+            }
+
+            .game {
+                height: 25vh;
+            }
+
+            .rules {
+                height: 35vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScymMSPAMTVmRWRJi-96MBMGbM7YWpi3LOmd_7SSx-HGDnubg/viewform'">Register here</p>
+        <h1>TUG OF WAR</h1>
+        <p class="event-details">
+            Gear up for the exhilarating Tug of War competition at SAMVID 2K24 (JASHN-E-YUVA)! Whether you're a seasoned participant or a newcomer, this event promises intense matches and competitive spirit. Be part of the ultimate test of strength and teamwork. Register now to secure your spot and showcase your Tug of War prowess!
+        </p>
+        <div class="bottom-section">
+            <div class="venue">
+                <h2>VENUE</h2>
+                <p>11 March 2024, 10:00 AM</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>SSTC Bhilai, Ground</p>
+            </div>  
+
+            <div class="game">
+                <h2>EVENT DETAILS</h2>
+                <p><u>Team Composition:</u> 6-8 participants</p>
+                <p><u>Mens Team Weight:</u> 550kg</p>
+                <p><u>Girls Team Weight:</u> 500kg</p>
+            </div>
+            
+            <div class="rules">
+                <h2>RULES</h2>
+                    <p>1. Players of same college with their College IDs and Aadhar Card for verification.</p>
+                    <p>2. Disputes resolved by a jury including sports officials.</p>
+                    <p>3. Spot Entry available, ₹100 extra.</p>
+                    <p>4. Via - STONG MAN CLUB</p>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Amber Khare: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:6265808449'" style="cursor: pointer;">6265808449</p>
+                </div>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Aazam Zaid: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:6265370829'" style="cursor: pointer;">6265370829</p>
+                </div>                
+            </div>  
+
+            <div class="fee">
+                <h2>ENTRY FEES</h2>
+                <p>Mens Entry: ₹599</p>
+                <p>Girls Entry: ₹499</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
