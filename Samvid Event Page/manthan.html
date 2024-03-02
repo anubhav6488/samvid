@@ -79,7 +79,26 @@
             white-space: nowrap;
             /* font-size: 2.8vw; */
         }
+        
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 9.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
 
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+        }
+        
         .bottom-section {
             display: flex;
             flex-direction: row;
@@ -94,29 +113,29 @@
             padding: 1vh;
         }
 
-        .details, .contact {
+        .details, .contact, .venue{
             background-color: rgb(70, 82, 194);
             padding: 1vh 1vw;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
             border-radius: 5px;
             margin: 2vh auto;
-            width: 39vw;
+            width: 25vw;
             height: 40vh;
         }
 
-        .details h2, .contact h2 {
+        .details h2, .contact h2, .venue h2 {
             color: #9dcd92;
             font-weight: bold;
             text-align: center;
             font-size: 2vw;
         }
 
-        .details p, .contact p {
+        .details p, .contact p,.venue p{
             color: #ffffff;
             font-weight: bold;
             position: relative;
             text-align: center;
-            font-size: 1.4vw;
+            font-size: 1.2vw;
         }
 
         .contact .phone-number {
@@ -228,6 +247,13 @@
                 <p>Kush Upadhyay: <span class="phone-number" onclick="window.location.href='tel:8989906834'">8989906834</span></p>
                 <p>Chhaya Wadia: <span class="phone-number" onclick="window.location.href='tel:9790878660'">9790878660</span></p>
                 <p>Prachi Soni: <span class="phone-number" onclick="window.location.href='tel:9190444339'">9190444339</span></p>
+            </div>
+
+            <div class="venue">
+                <h2>VENUE & DATE</h2>
+                <p>12-13 March 2024</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>SSTC Bhilai</p>
             </div>
         </div>
     </div>
