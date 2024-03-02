@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Movie - SAMVID 2024</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/fun-me-hum-registration-background.jpg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #a796f1; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: rgb(173, 114, 178);
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        } */
+        
+        .event-details {
+            background-color: rgba(186, 12, 12, 0.5);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 4vw;
+            margin-bottom: 2vw;
+            color: #17da99;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+            white-space: nowrap;
+        }
+        
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 9.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+        }
+        
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #b19667;
+            position: absolute;
+            top: 39vh;
+            width: 89vw;
+            left: 2vw;
+            padding: 1vh;
+        }
+
+        .details, .contact, .venue{
+            background-color: rgb(66, 176, 180);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 25vw;
+            height: 43vh;
+        }
+
+        .details h2, .contact h2, .venue h2 {
+            color: #9dcd92;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2vw;
+        }
+
+        .details p, .contact p,.venue p{
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+            font-size: 1.2vw;
+        }
+
+        .contact .phone-number {
+            color: #00581e;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .contact .phone-number:hover {
+            color: #00892b;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 210vh;
+            }
+
+            /* .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+                background-color: #6f7fe6;
+            } */
+
+            .event-details {
+                position: absolute;
+                top: 30vh;
+                left: 2vw;
+                width: 80vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 180vh;
+                position: relative;
+                left: 3vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #0724cb;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: wrap;
+                left: 15vw;
+                font-size: 5vh;
+                white-space: nowrap;
+            }
+
+            .bottom-section {
+                top: 65vh;
+                flex-direction: column;
+                width: 85vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .details, .contact, .venue {
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: antiquewhite;
+            }
+
+            .details p, .contact p, .venue p {
+                color: #02042a;
+            }
+
+            .details {
+                height: 24vh;
+            }
+
+            .contact {
+                height: 20vh;
+            }
+
+            .venue {
+                height: 30vh;
+            }
+
+            .details h2, .contact h2, .venue h2 {
+                color: #719768;
+                font-weight: bold;
+                text-align: center;
+                font-size: 4vw;
+            }
+
+            .venue .location {
+                width: 22vw;
+                left: 21vw;
+            }
+
+            .venue .location:hover {
+                left: 21vw;
+                width: 23vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <!-- <p class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeutrSavAbU97B5qGlXr1j3knQm9aBcDDDixZCRoeKVA_JhNw/viewform'">Register here</p> -->
+        <h1>Fun Me Hum</h1>
+        <p class="event-details">
+            Embark on an exhilarating journey into the enchanting realm of cinema with "Guess the Movie" at SAMVID 2024! This intellectual challenge is designed to unleash your cinematic knowledge and put your expertise to the test. Immerse yourself in the captivating world of movies, where every moment is a thrilling adventure.
+            As a participant, you'll be faced with a series of challenges that go beyond mere entertainment—they are crafted to keep you on the edge of your seat. From identifying iconic scenes to unraveling intricate plot twists, this event promises to be a cinephile's paradise.        
+        </p>
+        <div class="bottom-section">
+            <div class="details">
+                <h2>EVENT FEATURES</h2>
+                <p>Guess the Movie Name</p>
+                <p>Balloon in Cup Challenge</p>
+                <p>What's in the Box</p>
+                <p>Sath Ka Dum</p>
+                <p>Sac Race / Lit the Candle</p>
+            </div>
+            <div class="contact">
+                <h2>STUDENT COORDINATORS</h2>
+                <p>Ms. Prachi Singh: <span class="phone-number" onclick="window.location.href='tel:9343564569'">9343564569</span></p>
+                <p>Ms. Prerna Agrawal: <span class="phone-number" onclick="window.location.href='tel:7772045691'">7772045691</span></p>
+            </div>
+
+            <div class="venue">
+                <h2>EVENT DETAILS</h2>
+                <p>12-13 March 2024</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>SSTC, Bhilai, Junwani</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
