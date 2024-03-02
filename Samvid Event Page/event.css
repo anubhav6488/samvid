@@ -267,6 +267,13 @@ nav {
   padding-bottom: 5vh;
 }
 
+.sp_cat_container_management {
+  background-image: url("./Assests/management-events.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 5vh;
+}
+
 .tech_heading {
   color: white;
   
