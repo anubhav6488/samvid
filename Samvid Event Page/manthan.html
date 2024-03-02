@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manthan - A Step Towards Sustainability</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/manthan-registration-background.jpg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #a796f1; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: rgb(173, 114, 178);
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+        
+        .event-details {
+            background-color: rgba(206, 28, 28, 0.2);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #ffffff;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+            white-space: nowrap;
+            /* font-size: 2.8vw; */
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #8ece86;
+            position: absolute;
+            top: 40vh;
+            width: 89vw;
+            left: 2vw;
+            padding: 1vh;
+        }
+
+        .details, .contact {
+            background-color: rgb(70, 82, 194);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 39vw;
+            height: 40vh;
+        }
+
+        .details h2, .contact h2 {
+            color: #9dcd92;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2vw;
+        }
+
+        .details p, .contact p {
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+            font-size: 1.4vw;
+        }
+
+        .contact .phone-number {
+            color: #00581e;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .contact .phone-number:hover {
+            color: #00892b;
+        }
+
+
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 150vh;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+                background-color: #6f7fe6;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 30vh;
+                left: 2vw;
+                width: 80vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 130vh;
+                position: relative;
+                left: 3vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #2507ae;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: wrap;
+                left: 10vw;
+                width: 90vw;
+            }
+
+            .bottom-section {
+                top: 65vh;
+                flex-direction: column;
+                width: 85vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .details, .contact {
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: antiquewhite;
+            }
+
+            .details p, .contact p {
+                color: #02042a;
+            }
+
+            .details {
+                height: 24vh;
+            }
+
+            .contact {
+                height: 20vh;
+            }
+
+            .details h2, .contact h2 {
+                color: #719768;
+                font-weight: bold;
+                text-align: center;
+                font-size: 4vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <p class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeutrSavAbU97B5qGlXr1j3knQm9aBcDDDixZCRoeKVA_JhNw/viewform'">Register here</p>
+        <h1><span style="color: #b9a1fc;">Manthan</span> - Towards Sustainability</h1>
+        <p class="event-details">
+            Welcome to Samvid 2024✨, the most awaited techno-cultural-management fest of our esteemed institution! Get ready to immerse yourself in the spirit of knowledge and innovation at our national-level seminar on sustainability, "Manthan." This is your chance to not just showcase your research skills, but to elevate them to a global platform. Select a topic that resonates with you, dive deep into its nuances, craft a meticulously researched report, and get ready to make a lasting impact! Join us in this intellectual journey at "Manthan" and let your ideas resonate on a grand stage!
+        </p>
+        <div class="bottom-section">
+            <div class="details">
+                <h2>MANTHAN FEATURES</h2>
+                <p>Paper Presentation</p>
+                <p>E-Certificate</p>
+                <p>Award</p>
+                <p>Publication In Journal Of Repute</p>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <p>Kush Upadhyay: <span class="phone-number" onclick="window.location.href='tel:8989906834'">8989906834</span></p>
+                <p>Chhaya Wadia: <span class="phone-number" onclick="window.location.href='tel:9790878660'">9790878660</span></p>
+                <p>Prachi Soni: <span class="phone-number" onclick="window.location.href='tel:9190444339'">9190444339</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
