@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORPORATE ROADIES - SAMVID 2024</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/corporate-roadies-registration-background.jpeg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+/* 
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #a796f1; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        } */
+
+        /* .register-button:hover {
+            background-color: rgb(173, 114, 178);
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+         */
+        .event-details {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+            color: #ffffff;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+        }
+
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png");
+            position: relative;
+            left: 9.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #8ece86;
+            position: absolute;
+            top: 40vh;
+            width: 89vw;
+            left: 2vw;
+            padding: 1vh;
+        }
+
+        .features, .contact, .venue{
+            background-color: rgb(121, 129, 206);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 25vw;
+            height: 35vh;
+        }
+
+        .features h2, .contact h2, .venue h2{
+            color: #02042a;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .features p, .contact p, .venue p{
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 200vh;
+            }
+/* 
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+                background-color: #6f7fe6;
+            } */
+
+            .event-details {
+                position: absolute;
+                top: 25vh;
+                left: 2vw;
+                width: 82vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 180vh;
+                position: relative;
+                left: 2.5vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #76bf6f;
+                position: absolute;
+                font-size: 8vw;
+                top: 7vh;
+                white-space: nowrap;
+                left: 6vw;
+            }
+
+            .bottom-section {
+                top: 65vh;
+                flex-direction: column;
+                width: 86vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .features, .contact, .venue{
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: rgb(121, 129, 206);
+            }
+
+            .features h2, .contact h2, .venue h2 {
+                font-size: 4.5vw;
+                color: white;
+            }
+
+            .features p, .contact p, .venue p {
+                color: #02042a;
+            }
+
+            .features {
+                height: 25vh;
+            }
+
+            .contact {
+                height: 20vh;
+            }
+
+            .venue {
+                height: 30vh;
+            }
+
+            .venue .location {
+                width: 22vw;
+                left: 16vw;
+            }
+
+            .venue .location:hover {
+                width: 23vw;
+                left: 17vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <!-- <p class="register-button" onclick="window.location.href='#'">Register</p> -->
+        <h1>CORPORATE ROADIES</h1>
+        <p class="event-details">
+            Prepare for the ultimate adventure with "Corporate Roadies" at SAMVID 2024! This event is not just a competition; it's an immersive experience where excitement meets challenges head-on. Engage in a dynamic series of tasks designed to test your skills, unleash your creativity, and foster teamwork. Whether you fancy yourself a master of tasks, a graceful balloon dancer, or an astute silence guesser, this event promises something for every participant. Get ready to explore the power playtime like never before! Don't miss out on this extraordinary roadie adventure – register now to secure your spot and make memories that will last a lifetime!        </p>
+        <div class="bottom-section">
+            <div class="features">
+                <h2>EVENT FEATURES</h2>
+                <p>Task Master</p>
+                <p>Dance With Balloon</p>
+                <p>Guess the Silence</p>
+                <p>Power Playtime</p>
+            </div>
+
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Ms. Ritika Jangra: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:+917024099960'" style="cursor: pointer;">+91 7024099960</p>
+                </div>
+                <div class="contact-row">
+                    <p style="color: rgb(0, 43, 23);">Mr. Ritik Vaishnav: &emsp;</p>
+                    <p class="phone-number" onclick="window.location.href='tel:+917898998797'" style="cursor: pointer;">+91 7898998797</p>
+                </div>                
+            </div>
+
+            <div class="venue">
+                <h2>VENUE & DATE</h2>
+                <p>12-13 March 2024</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>SSTC Bhilai</p>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
