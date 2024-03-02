@@ -77,7 +77,6 @@
             left: 2vw;
             width: 50vw;
             white-space: nowrap;
-            /* font-size: 2.8vw; */
         }
         
         .venue .location {
@@ -105,7 +104,7 @@
             align-items: center;
             justify-content: space-around;
             border-radius: 8px;
-            background-color: #8ece86;
+            background-color: #c0d2aa;
             position: absolute;
             top: 40vh;
             width: 89vw;
@@ -148,11 +147,9 @@
             color: #00892b;
         }
 
-
-
         @media screen and (max-width: 768px){
             html, body {
-                height: 150vh;
+                height: 210vh;
             }
 
             .register-button {
@@ -172,7 +169,7 @@
 
             .event-info {
                 width: 90vw;
-                height: 130vh;
+                height: 180vh;
                 position: relative;
                 left: 3vw;
             }
@@ -200,13 +197,13 @@
                 padding-bottom: 3vh;
             }
 
-            .details, .contact {
+            .details, .contact, .venue {
                 padding: 1vh 5vw;
                 width: 60vw;
                 background-color: antiquewhite;
             }
 
-            .details p, .contact p {
+            .details p, .contact p, .venue p {
                 color: #02042a;
             }
 
@@ -218,11 +215,25 @@
                 height: 20vh;
             }
 
-            .details h2, .contact h2 {
+            .venue {
+                height: 30vh;
+            }
+
+            .details h2, .contact h2, .venue h2 {
                 color: #719768;
                 font-weight: bold;
                 text-align: center;
                 font-size: 4vw;
+            }
+
+            .venue .location {
+                width: 22vw;
+                left: 21vw;
+            }
+
+            .venue .location:hover {
+                left: 21vw;
+                width: 23vw;
             }
         }
     </style>
