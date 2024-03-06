@@ -294,5 +294,7 @@ nav {
   left: 100vw;
 }
 
-
+.management-events p {
+  color: blue;
+}
 
