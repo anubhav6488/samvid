@@ -259,7 +259,7 @@ body::-webkit-scrollbar {
         -webkit-animation-name: none;
         animation-name: none;
         -webkit-animation-duration: 30s;
-        animation-duration: 9s;
+        animation-duration: 12s;
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
         -webkit-animation-direction: normal;
@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
         }
         to{
             /* transform: translateX(var(--change-end)); */
-            transform: translateX(-400vw);
+            transform: translateX(-300vw);
         }
     }
     @-webkit-keyframes slide_animation{
