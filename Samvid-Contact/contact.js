@@ -106,15 +106,6 @@ memberContainer.forEach((member)=>{
     //         }
     //     }
     // })
-    $(document).ready(function(){
-        $(window).scroll(function(evt){
-        var v2 = Math.abs($('.Contact-team-member-container').position().top - $(window).height()/2);
-        var v1 = $(this).scrollTop();
-            if( v1 > v2 ){
-            member.style.animationName = 'slide_animation'
-          }
-        });
-    });
 });
 
 $(document).ready(function(){
