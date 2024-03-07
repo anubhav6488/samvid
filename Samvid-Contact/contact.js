@@ -117,6 +117,16 @@ memberContainer.forEach((member)=>{
     });
 });
 
+ $(document).ready(function(){
+        $(window).scroll(function(evt){
+        var v2 = Math.abs($('#Contact-team-member-container(4)').position().top - $(window).height()/2);
+        var v1 = $(this).scrollTop();
+            if( v1 > v2 ){
+            $('#Contact-team-member-container(4)').style.animationName = 'slide_animation(4)'
+          }
+        });
+    });
+
 
 
 //animation of team members
