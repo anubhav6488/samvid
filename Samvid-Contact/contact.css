@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
         }
         to{
             /* transform: translateX(var(--change-end)); */
-            transform: translateX(-200vw);
+            transform: translateX(-400vw);
         }
     }
     @-webkit-keyframes slide_animation{
