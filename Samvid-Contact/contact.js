@@ -45,38 +45,6 @@ memberContainer.forEach((member)=>{
     let newChange = num*100;
     root.style.setProperty('--change-end', "-"+newChange+"vw")
 
-    // const arrow_Left = document.querySelectorAll(".arrow-left");
-    // const arrow_Right = document.querySelectorAll(".arrow-right");
-    // var countR = 0;
-
-    // arrow_Left.forEach((element)=>{
-    //     let n = Array.from(arrow_Left).indexOf(element);
-    //         if(n == 0){
-    //             element.style.visibility='hidden';
-    //         }
-    // })
-
-    // arrow_Left.forEach((element)=>{
-    //     element.onclick=()=>{
-    //         let x = Array.from(arrow_Left).indexOf(element);
-    //         console.log("ji"+x);
-    //         let newValue = x*100;
-    //         let value = "-"+newValue+"vw";
-    //         console.log(value);
-    //         // member.style.animationPlayState = 'paused';
-    //         // setTimeout(()=>{
-    //         //     member.style.animationPlayState = 'running';
-    //         // },3000)
-
-    //         if(countR > 0){  
-    //             root.style.setProperty('--change-start',value); //"-"+newChange+"vw")
-    //             // member.style.transform = 'translateX('+value+')';
-    //             countR=countR-1;
-    //         }
-    //     }    
-    // })
-
-
     arrow_Right.forEach((element)=>{
 
         let n = Array.from(arrow_Right).indexOf(element);
@@ -84,28 +52,6 @@ memberContainer.forEach((member)=>{
                 element.style.visibility='hidden';
             }
     })
-
-    // arrow_Right.forEach((element)=>{
-    //     element.onclick=()=>{
-        
-    //         let x = countR+1
-    //         let newValue = x*100;
-    //         let value = "-"+newValue+"vw";
-    //         console.log(value);
-            
-    //         member.style.animationPlayState = 'paused';
-    //         setTimeout(()=>{
-    //             member.style.animationPlayState = 'running';
-    //         },3000)
-            
-    //         if(countR < num){
-    //             // member.style.animationName = 'none';
-    //             member.style.transform = 'translateX('+value+')';
-    //             countR=countR+1;
-    //             console.log(countR);
-    //         }
-    //     }
-    // })
 
     $(document).ready(function(){
         $(window).scroll(function(evt){
