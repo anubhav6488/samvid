@@ -294,10 +294,8 @@ body::-webkit-scrollbar {
         }
         to{
             /* transform: translateX(var(--change-end)); */
-            transform: translateX(-400vw);
-
+            transform: translateX(-200vw);
         }
-
     }
     @-webkit-keyframes slide_animation{
         0% {right:0vw;}
@@ -308,6 +306,15 @@ body::-webkit-scrollbar {
         71.6% {right: 200vw;}
         85.8% {right: 300vw;}
         100% {right:300vw;}
+    }
+    @keyframes slide_animation(4){
+         from{
+            transform: translateX(var(--change-start));
+        }
+        to{
+            /* transform: translateX(var(--change-end)); */
+            transform: translateX(-400vw);
+        }
     }
 
     .Contact-card-container{
