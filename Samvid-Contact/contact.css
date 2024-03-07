@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
         }
         to{
             /* transform: translateX(var(--change-end)); */
-            transform: translateX(-300vw);
+            transform: translateX(-400vw);
 
         }
 
@@ -306,8 +306,8 @@ body::-webkit-scrollbar {
         43.2% {right:100vw;}
         57.4% {right:200vw;}
         71.6% {right: 200vw;}
-        85.8% {right: 400vw;}
-        100% {right:400vw;}
+        85.8% {right: 300vw;}
+        100% {right:300vw;}
     }
 
     .Contact-card-container{
