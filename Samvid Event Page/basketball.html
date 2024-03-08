@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Tournament - SAMVID 2024</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        html, body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Assests/basketball-registration-background.jpeg"); /* Replace with your background image URL */
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .event-details {
+            background-color: rgba(186, 12, 12, 0.5);
+            border-radius: 5px;
+            padding: 2vh;
+            margin-top: -7vh;
+        }
+
+        .event-info {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            height: 84vh;
+            width: 90vw;
+            font-family: 'Quicksand', sans-serif;
+            padding: 2vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .event-info p {
+            font-size: 1.1vw;
+            line-height: 2vw;
+            text-align: justify;
+        }
+
+        .event-info h1 {
+            font-size: 4vw;
+            margin-bottom: 2vw;
+            color: #17da99;
+            position: relative;
+            top: -6vh;
+            left: 2vw;
+            width: 50vw;
+            white-space: nowrap;
+        }
+
+        .register-button {
+            position: absolute;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #a796f1; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .register-button:hover {
+            background-color: rgb(173, 114, 178);
+            transform: scale(1.1);
+            transition: 0.5s ease;
+        }
+
+        .venue .location {
+            height: 11.2vh;
+            width: 5.5vw;
+            background-image: url("./Assests/maps-icon.png"); /* Replace with your location icon URL */
+            position: relative;
+            left: 9.5vw;
+            top: -1vh;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .venue .location:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            height: 12vh;
+            width: 6vw;
+            transition: 1s ease;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #b19667;
+            position: absolute;
+            top: 35vh;
+            width: 89vw;
+            left: 2vw;
+            padding: 1vh;
+        }
+
+        .details, .contact, .venue {
+            background-color: rgb(85, 66, 180);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 25vw;
+            height: 45vh;
+        }
+
+        .details h2, .contact h2, .venue h2 {
+            color: #9dcd92;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2vw;
+        }
+
+        .details p, .contact p, .venue p {
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+            font-size: 1.2vw;
+        }
+
+        .contact .phone-number {
+            color: #122217;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .contact .phone-number:hover {
+            color: #00892b;
+        }
+
+        @media screen and (max-width: 768px){
+            html, body {
+                height: 180vh;
+                background-position: right;
+            }
+
+            .event-details {
+                position: absolute;
+                top: 30vh;
+                left: 2vw;
+                width: 80vw;
+            }
+
+            .event-info {
+                width: 90vw;
+                height: 160vh;
+                position: relative;
+                left: 3vw;
+            }
+
+            .event-info p {
+                font-size: 3.5vw;
+                line-height: 5vw;
+            }
+
+            .event-info h1 {
+                color: #55a328;
+                position: relative;
+                top: 7vh;
+                left: 8vw;
+                font-size: 3.5vh;
+                white-space: nowrap;
+            }
+
+            .bottom-section {
+                top: 45vh;
+                flex-direction: column;
+                width: 85vw;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+
+            .details, .contact, .venue {
+                padding: 1vh 5vw;
+                width: 60vw;
+                background-color: antiquewhite;
+            }
+
+            .details p, .contact p, .venue p {
+                color: #02042a;
+            }
+
+            .details {
+                height: 30vh;
+            }
+
+            .contact {
+                height: 20vh;
+            }
+
+            .venue {
+                height: 30vh;
+            }
+
+            .details h2, .contact h2, .venue h2 {
+                color: #719768;
+                font-weight: bold;
+                text-align: center;
+                font-size: 4vw;
+            }
+
+            .venue .location {
+                width: 22vw;
+                left: 21vw;
+            }
+
+            .venue .location:hover {
+                left: 21vw;
+                width: 23vw;
+            }
+
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+                background-color: #6f7fe6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="event-info">
+        <h1>Basketball Tournament</h1>
+        <p class="event-details">
+            Join us for the thrilling Basketball Tournament at SAMVID 2024! This exclusive event is a battleground for college students, where teams will compete in intense matches following standard rules and point systems.
+        </p>
+        <p class="register-button" onclick="window.location.href='https://forms.gle/jtkD7Lu69KbcfM9w9'">Register here</p>
+        <div class="bottom-section">
+            <div class="details">
+                <h2>EVENT FEATURES</h2>
+                <p>Exclusive Basketball Tournament</p>
+                <p>Knockout Format</p>
+                <p>10 Minutes Long Games</p>
+                <p>Exciting Point System</p>
+                <p>Thrilling Tiebreaker Rule</p>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <p>Gourav: <span class="phone-number" onclick="window.location.href='tel:7999556483'">79995 56483</span></p>
+                <p>Nitin: <span class="phone-number" onclick="window.location.href='tel:9755587846'">97555 87846</span></p>
+                <p>Devansh: <span class="phone-number" onclick="window.location.href='tel:7999469971'">79994 69971</span></p>
+            </div>
+
+            <div class="venue">
+                <h2>EVENT DETAILS</h2>
+                <p>March 12-13, 2024</p>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>SSTC, Bhilai, Junwani</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
