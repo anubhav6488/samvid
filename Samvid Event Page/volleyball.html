@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOLLEYBALL - SSTC</title>
+    <title>Volleyball Tournament - SAMVID 2024</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
         html, body {
@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("./Assests/volleyball.jpeg");
+            background-image: url("./Assests/volleyball-registraion-background.jpeg"); /* Replace with your background image URL */
             background-position: center center; 
             background-repeat: no-repeat;
             background-size: cover;
@@ -19,28 +19,8 @@
             width: 100vw;
         }
 
-        .register-button {
-            position: absolute;
-            top: 0vh;
-            right: 2vw;
-            padding: 2vh 3vw;
-            background-color: rgb(239, 105, 43) ; 
-            border-radius: 8px;
-            font-size: 1.5vw;
-            cursor: pointer;
-            color: white;
-            font-weight: bold;
-            font-family: 'Quicksand', sans-serif;
-        }
-
-        .register-button:hover {
-            background-color: rgb(207, 159, 137);
-            transform: scale(1.1);
-            transition: 0.5s ease;
-        }
-        
         .event-details {
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(186, 12, 12, 0.5);
             border-radius: 5px;
             padding: 2vh;
             margin-top: -7vh;
@@ -48,10 +28,10 @@
 
         .event-info {
             position: absolute;
-            top: 5vh;
-            left: 8vw;
-            height: 84vh;
-            width: 80vw;
+            top: 3vh;
+            left: 3vw;
+            height: 85vh;
+            width: 90vw;
             font-family: 'Quicksand', sans-serif;
             padding: 2vw;
             background: rgba(0, 0, 0, 0.2);
@@ -69,64 +49,41 @@
         }
 
         .event-info h1 {
-            font-size: 3.5vw;
             margin-bottom: 2vw;
-            color: #fff;
+            color: #55a328;
             position: relative;
-            top: -6vh;
-            left: 2vw;
-            width: 50vw;
+            top: -7vh;
+            font-size: 8vh;
+            /* white-space: normal; */
+            width: 50vw;    
         }
 
-        .bottom-section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            border-radius: 8px;
-            background-color: #a7c3ed;
+        .register-button {
             position: absolute;
-            top: 40vh;
-            width: 80vw;
-            left: 2vw;
-        }
-
-        .fee, .venue, .contact, .timing{
-            background-color: rgb(81, 148, 94);
-            padding: 1vh 1vw;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
-            border-radius: 5px;
-            margin: 2vh auto;
-            width: 15vw;
-            height: 45vh;
-        }
-
-        .timing{
-            width:25vw;
-        }
-        .fee{
-            width:10vw;
-        }
-
-        .fee h2, .timing h2, .contact h2, .venue h2{
-            color: #f2f4e9;
+            top: 0vh;
+            right: 2vw;
+            padding: 2vh 3vw;
+            background-color: #a796f1; 
+            border-radius: 8px;
+            font-size: 1.5vw;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
             font-weight: bold;
-            text-align: center;
+            font-family: 'Quicksand', sans-serif;
         }
 
-        .fee p, .timing p, .contact p, .venue p{
-            color: #ffffff;
-            font-weight: bold;
-            position: relative;
-            text-align: center;
+        .register-button:hover {
+            background-color: rgb(173, 114, 178);
+            transform: scale(1.1);
+            transition: 0.5s ease;
         }
 
         .venue .location {
             height: 11.2vh;
             width: 5.5vw;
-            background-image: url("./Assests/maps-icon.png");
+            background-image: url("./Assests/maps-icon.png"); /* Replace with your location icon URL */
             position: relative;
-            left: 4.5vw;
+            left: 9.5vw;
             top: -1vh;
             background-position: center center;
             background-size: cover;
@@ -140,40 +97,73 @@
             transition: 1s ease;
         }
 
-        .venue p {
-            position: relative;
-            top: -1vh;
-        }
-
-        .contact-row {
+        .bottom-section {
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color: #b19667;
+            position: absolute;
+            top: 33vh;
+            width: 89vw;
+            left: 2vw;
+            padding: 1vh;
+        }
+
+        .details, .contact, .venue {
+            background-color: rgb(85, 66, 180);
+            padding: 1vh 1vw;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);            
+            border-radius: 5px;
+            margin: 2vh auto;
+            width: 25vw;
+            height: 48vh;
+        }
+
+        .details h2, .contact h2, .venue h2 {
+            color: #9dc d92;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2vw;
+        }
+
+        .details p, .contact p, .venue p {
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+            font-size: 1.2vw;
+        }
+
+        .contact .phone-number {
+            color: #122217;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .contact .phone-number:hover {
+            color: #00892b;
         }
 
         @media screen and (max-width: 768px){
             html, body {
-                height: 210vh;
-            }
-
-            .register-button {
-                top: 0vh;
-                right: 25vw;
-                padding: 1.5vh 10vw;
-                font-size: 10vw;
+                height: 180vh;
+                background-position: right;
             }
 
             .event-details {
                 position: absolute;
-                top: 25vh;
+                top: 30vh;
                 left: 2vw;
-                width: 82vw;
+                width: 80vw;
             }
 
             .event-info {
                 width: 90vw;
-                height: 195vh;
+                height: 160vh;
                 position: relative;
-                left: 2.5vw;
+                left: 3vw;
             }
 
             .event-info p {
@@ -182,94 +172,101 @@
             }
 
             .event-info h1 {
-                color: #fff;
-                position: absolute;
-                font-size: 6vw;
+                color: #55a328;
+                position: relative;
                 top: 7vh;
-                white-space: nowrap;
                 left: 8vw;
+                font-size: 3.5vh;
+                white-space: nowrap;
             }
 
             .bottom-section {
                 top: 45vh;
                 flex-direction: column;
-                width: 90vw;
+                width: 85vw;
                 padding-top: 3vh;
                 padding-bottom: 3vh;
             }
 
-            .fee, .venue, .contact, .timing {
+            .details, .contact, .venue {
                 padding: 1vh 5vw;
                 width: 60vw;
+                background-color: antiquewhite;
             }
 
-            .venue {
+            .details p, .contact p, .venue p {
+                color: #02042a;
+            }
+
+            .details {
                 height: 30vh;
             }
 
+            .contact {
+                height: 30vh;
+            }
+
+            .venue {
+                height: 25vh;
+            }
+
+            .details h2, .contact h2, .venue h2 {
+                color: #719768;
+                font-weight: bold;
+                text-align: center;
+                font-size: 4vw;
+            }
+
             .venue .location {
-                left: 18vw;
                 width: 22vw;
+                left: 21vw;
             }
 
             .venue .location:hover {
+                left: 21vw;
                 width: 23vw;
             }
 
-            .fee {
-                height: 25vh;
-            }
-
-            .timing {
-                height: 45vh;
-            }
-
-            .contact {
-                height: 25vh;
+            .register-button {
+                top: 0vh;
+                right: 25vw;
+                padding: 1.5vh 10vw;
+                font-size: 10vw;
+                background-color: #6f7fe6;
             }
         }
     </style>
 </head>
 <body>
     <div class="event-info">
-        <p class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeta1y_0xumulGhOtLoDroSeV0ytA86DmGvRuSDlGitlSt_vA/viewform'">Register here</p>
-        <h1>VOLLEYBALL TOURNAMENT</h1>
+        <h1>Volleyball Tournament</h1>
         <p class="event-details">
-            Winning is not everything , but making an effort to win is✨! 
-            <BR>
-            Hey guys!<br>
-            SSTC SAMVID24 brings you Inter College Volleyball Tournament.<br>
-            So what are you waiting for?
-            
-               </p>
+            Winning is not everything, but making an effort to win is! SSTC SAMVID24 brings you Inter College Volleyball Tournament. Register for the event now to win an exciting cash prize.
+        </p>
+        <p class="register-button" onclick="window.location.href='https://forms.gle/2RJ1rk29kapd6sJB7'">Register here</p>
         <div class="bottom-section">
-            <div class="venue">
-                <h2>VENUE & DATE</h2>
-                <p>11-13 MARCH 2024</p>
-                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
-                <p>SSTC BHILAI</p>
-            </div>
-            <div class="fee">
-                <h2>ENTRY FEES</h2>
-                <p>&emsp;Each Team : Rs.600/-</p>
-            </div>
-            <div class="timing">
-                <h2>Event Details</h2>
-                <p  style = "text-align: left;">1. The tournament will be conducted only if a minimum of 12 teams are registered. </p>
-                <p  style = "text-align: left;">2. The prize pool may vary depending on a number of registrations.</p>
-                <p  style = "text-align: left;">3.Stay facility will be provided by the committee which are chargeable(including food).</p>
+            <div class="details">
+                <h2>TOURNAMENT DETAILS</h2>
+                <p>Entry Fee: Rs. 600 per team (both boys and girls)</p>
+                <p>Matches in College Campus</p>
+                <p>Players must be present on time</p>
+                <p>Availability: March 11-13, 2024</p>
+                <p>Medical Aid provided</p>
             </div>
             <div class="contact">
                 <h2>CONTACT</h2>
-                <div class="contact-row">
-                    <p style="color: rgb(191, 225, 209);text-align: left;"> Gopendra Nirmalkar : &emsp;</p>
-                    <p class="phone-number" onclick="window.location.href='tel:9131072141'" style="cursor: pointer;">9131072141</p>
-                </div>
-                <div class="contact-row">
-                    <p style="color: rgb(191, 225, 209);"> Vatsalya Saras : &emsp;</p>
-                    <p class="phone-number" onclick="window.location.href='tel:7389798959'" style="cursor: pointer;">7389798959</p>
-                </div>
-            </div>            
+                <p>Gopendra Nirmalkar: <span class="phone-number" onclick="window.location.href='tel:9131072141'">9131072141</span></p>
+                <p>Vatsalya Saras: <span class="phone-number" onclick="window.location.href='tel:7389798959'">7389798959</span></p>
+                <p>Arin Paddya: <span class="phone-number" onclick="window.location.href='tel:8092873656'">8092873656</span></p>
+                <p>Ajit Rai: <span class="phone-number" onclick="window.location.href='tel:6261192600'">6261192600</span></p>
+                <p>Samarpan Raj: <span class="phone-number" onclick="window.location.href='tel:8815347759'">8815347759</span></p>
+            </div>
+
+            <div class="venue">
+                <h2>EVENT LOCATION</h2>
+                <div class="location" onclick="window.location.href='https://maps.app.goo.gl/RDjeN71sbgRHELZ49'"></div>
+                <p>Campus Volleyball Court</p>
+            </div>
         </div>
     </div>
 </body>
