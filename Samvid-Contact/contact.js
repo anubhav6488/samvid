@@ -1,13 +1,4 @@
 
-const container = document.getElementById("Contact-team-member-container");
-$(container).children().each(function(element,index){
-    console.log(element)
-
-    setInterval(function(){
-
-    })
-});
-
 
 //Hamburger
 
@@ -53,23 +44,7 @@ memberContainer.forEach((member)=>{
             }
     })
 
-    $(document).ready(function(){
-        $(window).scroll(function(evt){
-        var v2 = Math.abs($('.Contact-team-member-container').position().top - $(window).height()/2);
-        var v1 = $(this).scrollTop();
-            if( v1 > v2 ){
-            member.style.animationName = 'slide_animation'
-          }
-        });
-    });
 });
 
 
 
-
-
-//animation of team members
-// const num = member.childElementCount;
-// console.log("hello"+num);
-// member.style.animationTimingFunction = 'steps('+num+')';
-// console.log(member.style.animationTimingFunction);
